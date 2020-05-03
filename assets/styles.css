@@ -1,0 +1,39 @@
+a {
+    color: coral;
+}
+.header {
+    font-family: AppleGothic;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+.pic {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cpic {
+    height: 400px;
+    object-fit: cover;
+}
+.spic {
+    height: 150px;
+    width: 200px;
+    margin-left: 30px;
+}
+.info-div {
+    margin: 30px;
+}
+.nav {
+    background-color: bisque;
+}
+.intro {
+    margin: 30px 150px 30px 150px;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    background-color: bisque;
+    height: 200px;
+}

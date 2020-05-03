@@ -7,6 +7,8 @@
 <body>
 
 <h1>Under construction....more projects coming soon</h1>
+<img class="spic"src="assets/construction.jpg">
+
 
 </body>
 </html>

@@ -50,7 +50,6 @@
 <br>
 
 
-
 <div class="profileContainer">
     <img src="assets/profilePic.JPG" class="pic" alt="...">
 </div>
@@ -58,7 +57,11 @@
 <div class="media intro">
 
     <div class="media-body">
-        Hi. My name is Valerie and I love the beach. I grew up in Southern California very close to Laguna Beach. The beach is so peaceful and scerene. I love to go ther any time of day, with friends or alone. Laguna Beach is one of the few beaches that has everything I am looking for when I go to the beach. I can find a quite little cove or be with the crowds at main beach and watch a game of beach volley ball. Here are a few activities you can enjoy at Laguna.
+        Hi. My name is Valerie and I love the beach. I grew up in Southern California very close to Laguna Beach. The
+        beach is so peaceful and scerene. I love to go ther any time of day, with friends or alone. Laguna Beach is one
+        of the few beaches that has everything I am looking for when I go to the beach. I can find a quite little cove
+        or be with the crowds at main beach and watch a game of beach volley ball. Here are a few activities you can
+        enjoy at Laguna.
     </div>
 
 </div>
@@ -67,32 +70,46 @@
     <li class="media info-div">
         <img src="assets/beach5.jpg" class="mr-3 spic" alt="...">
         <div class="media-body">
-            <h5 class="mt-0 mb-1"><a href="https://www.yelp.com/search?find_desc=watch+sunset&find_loc=Laguna+Beach%2C+CA+92651">Take A Walk At Sunset</a></h5>
-            Sunset is the perfect time to visit Laguna Beach. You can have a picnic at Heisler Park and then stroll the pathway past the lawn bowling, Las Brisas and end up on Main Beach. If you don't mind a line, you can even get some gelato at Paradiso on Pacfic Coast Highway.
+            <h5 class="mt-0 mb-1"><a
+                    href="https://www.yelp.com/search?find_desc=watch+sunset&find_loc=Laguna+Beach%2C+CA+92651">Take A
+                    Walk At Sunset</a></h5>
+            Sunset is the perfect time to visit Laguna Beach. You can have a picnic at Heisler Park and then stroll the
+            pathway past the lawn bowling, Las Brisas and end up on Main Beach. If you don't mind a line, you can even
+            get some gelato at Paradiso on Pacfic Coast Highway.
         </div>
     </li>
     <li class="media my-4 info-div">
         <img src="assets/beach7.jpg" class="mr-3 spic" alt="...">
         <div class="media-body">
-            <h5 class="mt-0 mb-1"><a href="https://www.visitlagunabeach.com/things-to-do/beaches/tide-pools/">Tide Pools</a></h5>
-            Laguna Beach is full of active and lush tide pools. You will find the usual mussels, crabs and sea urchins but occasionally you will see a small octopus. Shaws Cove is a great place to snorkel if you want to see the sea life that lives in the kelp bed. Sea Lion Rock is a great place to see the seal lions soaking up the sun.
+            <h5 class="mt-0 mb-1"><a href="https://www.visitlagunabeach.com/things-to-do/beaches/tide-pools/">Tide
+                    Pools</a></h5>
+            Laguna Beach is full of active and lush tide pools. You will find the usual mussels, crabs and sea urchins
+            but occasionally you will see a small octopus. Shaws Cove is a great place to snorkel if you want to see the
+            sea life that lives in the kelp bed. Sea Lion Rock is a great place to see the seal lions soaking up the
+            sun.
 
         </div>
     </li>
     <li class="media info-div">
         <img src="assets/beach9.jpg" class="mr-3 spic" alt="...">
         <div class="media-body">
-            <h5 class="mt-0 mb-1"><a href="https://www.visitlagunabeach.com/blog/lagunas-hidden-history-the-victoria-beach-pirate-tower/">Victoria Beach</a></h5>
-            Spend a day on the hidden beach at Treasure Island, accessible only by climbing over rocks or swimming around a craggy headland, and you might find yourself glancing over your shoulder, longing for a one-legged buccaneer with a parrot to wade up on shore. There, battered by the unending cycle of tides, stands a lonely stone turret—affectionately called the “Pirate Tower” by locals. The tower is sixty feet tall and seems to have been birthed directly from the sandstone cliffs that surround it. 
+            <h5 class="mt-0 mb-1"><a
+                    href="https://www.visitlagunabeach.com/blog/lagunas-hidden-history-the-victoria-beach-pirate-tower/">Victoria
+                    Beach</a></h5>
+            Spend a day on the hidden beach at Treasure Island, accessible only by climbing over rocks or swimming
+            around a craggy headland, and you might find yourself glancing over your shoulder, longing for a one-legged
+            buccaneer with a parrot to wade up on shore. There, battered by the unending cycle of tides, stands a lonely
+            stone turret—affectionately called the “Pirate Tower” by locals. The tower is sixty feet tall and seems to
+            have been birthed directly from the sandstone cliffs that surround it. 
         </div>
     </li>
 </ul>
 <div class="footer">
     <h1 class="header"> <?php date_default_timezone_set("America/Boise");
-    echo "Thank you for visiting my site today " .
-        "<br>". date("l") . ",  " .
-        "<br>". date("Y/m/d") .
-        "<br>" ." at " . date("h:ia") ?>
+        echo "Thank you for visiting my site today " .
+            "<br>" . date("l") . ",  " .
+            "<br>" . date("Y/m/d") .
+            "<br>" . " at " . date("h:ia") ?>
     </h1>
 </div>
 

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="landingPage/assets/styles.css">
 </head>
 <body>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -17,13 +17,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100 cpic" src="assets/beach1.jpg" alt="First slide">
+            <img class="d-block w-100 cpic" src="landingPage/assets/beach1.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100 cpic" src="assets/beach5.jpg" alt="Second slide">
+            <img class="d-block w-100 cpic" src="landingPage/assets/beach5.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100 cpic" src="assets/beach10.jpg" alt="Third slide">
+            <img class="d-block w-100 cpic" src="landingPage/assets/beach10.jpg" alt="Third slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -41,7 +41,7 @@
     </li>
     <li class="nav-item">
         <?php $project_link = "Projects Page"; ?>
-        <a class="nav-link links" href="projects.php"><?php echo "Go to " . $project_link ?></a>
+        <a class="nav-link links" href="landingPage/projects.php"><?php echo "Go to " . $project_link ?></a>
     </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Other Stuff</a>
@@ -51,7 +51,7 @@
 
 
 <div class="profileContainer">
-    <img src="assets/profilePic.JPG" class="pic" alt="...">
+    <img src="landingPage/assets/profilePic.JPG" class="pic" alt="...">
 </div>
 
 <div class="media intro">
@@ -68,7 +68,7 @@
 
 <ul class="list-unstyled">
     <li class="media info-div">
-        <img src="assets/beach5.jpg" class="mr-3 spic" alt="...">
+        <img src="landingPage/assets/beach5.jpg" class="mr-3 spic" alt="...">
         <div class="media-body">
             <h5 class="mt-0 mb-1"><a
                     href="https://www.yelp.com/search?find_desc=watch+sunset&find_loc=Laguna+Beach%2C+CA+92651">Take A
@@ -79,7 +79,7 @@
         </div>
     </li>
     <li class="media my-4 info-div">
-        <img src="assets/beach7.jpg" class="mr-3 spic" alt="...">
+        <img src="landingPage/assets/beach7.jpg" class="mr-3 spic" alt="...">
         <div class="media-body">
             <h5 class="mt-0 mb-1"><a href="https://www.visitlagunabeach.com/things-to-do/beaches/tide-pools/">Tide
                     Pools</a></h5>
@@ -91,7 +91,7 @@
         </div>
     </li>
     <li class="media info-div">
-        <img src="assets/beach9.jpg" class="mr-3 spic" alt="...">
+        <img src="landingPage/assets/beach9.jpg" class="mr-3 spic" alt="...">
         <div class="media-body">
             <h5 class="mt-0 mb-1"><a
                     href="https://www.visitlagunabeach.com/blog/lagunas-hidden-history-the-victoria-beach-pirate-tower/">Victoria

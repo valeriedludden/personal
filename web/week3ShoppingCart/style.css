@@ -1,0 +1,26 @@
+h1 {
+    height: 50px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+nav {
+    background-color: darkslateblue;
+}
+.itemContainer {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+table {
+    background-color: aqua;
+}
+.tableContainer {
+    width: 60%;
+}
+.cartInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}

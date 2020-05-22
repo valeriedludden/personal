@@ -39,14 +39,14 @@
     <li class="nav-item">
         <a class="nav-link active" href="#">Home</a>
     </li>
-<!--    <li class="nav-item">-->
-<!--        --><?php //$project_link = "Projects"; ?>
-<!--        <a class="nav-link links" href="week2personal/projects.php">--><?php //echo $project_link ?><!--</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        --><?php //$project_link = "Week 3 Shopping Cart"; ?>
-<!--        <a class="nav-link links" href="week3ShoppingCart/browse.php">--><?php //echo $project_link ?><!--</a>-->
-<!--    </li>-->
+    <li class="nav-item">
+        <?php $project_link = "Projects"; ?>
+        <a class="nav-link links" href="week2personal/projects.php"><?php echo $project_link ?></a>
+    </li>
+    <li class="nav-item">
+        <?php $project_link = "Week 3 Shopping Cart"; ?>
+        <a class="nav-link links" href="week3ShoppingCart/browse.php"><?php echo $project_link ?></a>
+    </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Other Stuff</a>
     </li>

@@ -7,9 +7,17 @@ require "dbConnect.php";
 
 
 $db = get_db();
-$dbArray = $db->query('SELECT title, location, author FROM book');
-$results = $dbArray->fetchAll(PDO::FETCH_ASSOC);
-foreach ($results as $row)
+//$dbArray = $db->query('SELECT title, location, author FROM book');
+//$results = $dbArray->fetchAll(PDO::FETCH_ASSOC);
+//foreach ($results as $row)
+//{
+//    echo 'Title - ' . $row['title'] . ' ';
+//    echo 'Author - ' . $row['author'] . ' ';
+//    echo 'Location - ' . $row['location'] . '';
+//    echo '<br/>';
+//}
+
+foreach ($db->query('SELECT title, location, author FROM book') as $row)
 {
     echo 'Title - ' . $row['title'] . ' ';
     echo 'Author - ' . $row['author'] . ' ';

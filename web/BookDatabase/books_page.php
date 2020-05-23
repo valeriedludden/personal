@@ -13,10 +13,8 @@ foreach ($db->query($dbbq) as $row)
     echo '<p>';
     echo '<b>';
     echo $row['title'];
-    echo ' : author id = ';
+    echo ' : author = ';
     echo $row['name'];
-    echo '</b>';
-    echo "the first one";
     echo '</b>';
     echo '<p/>';
 }

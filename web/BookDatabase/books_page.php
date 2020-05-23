@@ -5,7 +5,7 @@ require "dbConnect.php";
 $db = get_db();
 $book = $_POST["book"];
 
-foreach ($db->query('SELECT  b.title, a.name,  FROM book b, author a WHERE b.title =  ' . $book  .'AND b.author = a.id') as $row)
+foreach ($db->query('SELECT  b.title, a.name,  FROM book b, author a WHERE b.title =  "' . $book  .'" AND b.author = a.id') as $row)
 {
     echo '<p>';
     echo '<b>';

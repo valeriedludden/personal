@@ -7,7 +7,7 @@ $book = $_POST["book"];
 
 echo "THE book you picked was - " . $book;
 
-foreach ($db->query('SELECT title, author FROM book WHERE book = "' . $book . '"') as $row)
+foreach ($db->query('SELECT title, author FROM book WHERE title = "' . $book . '"') as $row)
 //foreach ($db->query('SELECT title, author FROM book WHERE title = "$book"') as $row)
 //foreach ($db->query('SELECT b.title, a.name FROM book b, author a WHERE b.author = a.id AND b.location = l.id') as $row)
 //foreach ($db->query('SELECT  b.title, a.name,  FROM book b, author a WHERE b.author = a.id') as $row)

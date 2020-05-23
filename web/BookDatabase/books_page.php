@@ -5,7 +5,7 @@ require "dbConnect.php";
 $db = get_db();
 //$book = "EMMA";
 //$book = $_POST["book"];
-$bdq = 'SELECT title, author FROM book WHERE title ="EMMA"';
+$bdq = "SELECT title, author FROM book WHERE title ='EMMA'";
 
 echo "THE book you picked was - " . $book;
 //$bookQuery = 'SELECT title, author FROM book WHERE title=';

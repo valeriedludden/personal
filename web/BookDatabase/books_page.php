@@ -7,8 +7,8 @@ $book1 = 'EMMA';
 $book = $_POST["book"];
 //$dbq = "SELECT title, author FROM book";
 $dbq = "SELECT title, author FROM book WHERE title ='EMMA'";
-$dbq1 = "SELECT title, author FROM book WHERE title = $book";
-$dbq2 = "SELECT title, author FROM book WHERE title = $book1";
+$dbq1 = "SELECT title, author FROM book WHERE title = '$book'";
+$dbq2 = "SELECT title, author FROM book WHERE title = '$book1'";
 
 echo "THE book you picked was - " . $book;
 //$bookQuery = 'SELECT title, author FROM book WHERE title=';

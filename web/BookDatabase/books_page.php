@@ -10,7 +10,7 @@ $bdq = "SELECT title, author FROM book WHERE title = $book";
 echo "THE book you picked was - " . $book;
 //$bookQuery = 'SELECT title, author FROM book WHERE title=';
 
-foreach ($db->query('SELECT title, author FROM book') as $row)
+//foreach ($db->query('SELECT title, author FROM book') as $row)
 foreach ($db->query(bdq) as $row)
 //foreach ($db->query('SELECT title, author FROM book WHERE title ="$book"' ) as $row)
 //foreach ($db->query($bookQuery . $book) as $row)

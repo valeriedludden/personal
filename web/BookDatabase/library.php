@@ -35,9 +35,9 @@ foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l,
         </div>
         <div class="card-body">
             <form method="POST" action="location.php">
-                <label for="book">Search by Location:</label>
-                <input type="text" id="location" name="book" placeholder="Location"><br />
-                <input type="submit" value="Search by Location"> <br />
+                <label for="location">Receive Newsletter:</label>
+               Guest Room <input type="radio" name="location" value="Guest">
+              East Book Shelf<input type="radio" name="location" value="East">
             </form>
         </div>
     </div>

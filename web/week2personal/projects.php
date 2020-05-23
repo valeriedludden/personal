@@ -20,7 +20,7 @@
         </li>
         <li class="nav-item">
             <?php $db_link = "Database Project 1"; ?>
-            <a class="nav-link links" href="../BookDatabase/index_library.php"><?php echo $db_link ?></a>
+            <a class="nav-link links" href="../BookDatabase/library.php"><?php echo $db_link ?></a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Other Stuff</a>

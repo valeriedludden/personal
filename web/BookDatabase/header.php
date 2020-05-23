@@ -20,7 +20,7 @@ session_start();
 <ul class="nav">
     <li class="nav-item">
         <?php $library_link = "Library"; ?>
-        <a class="nav-link links" href="index_library.php"><?php echo $library_link ?></a>
+        <a class="nav-link links" href="library.php"><?php echo $library_link ?></a>
     </li>
     <li class="nav-item">
         <?php $book_link = "Books"; ?>

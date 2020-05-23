@@ -1,7 +1,7 @@
--- DROP TABLE book;
--- DROP TABLE location;
--- DROP TABLE author;
--- DROP TABLE genre;
+DROP TABLE book;
+DROP TABLE location;
+DROP TABLE author;
+DROP TABLE genre;
 
 CREATE TABLE public.location
 (

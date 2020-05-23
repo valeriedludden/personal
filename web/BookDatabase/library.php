@@ -15,6 +15,21 @@ foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l,
 <body>
 
 <div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <form method="POST" action="books_page.php">
+                <label for="book">Search by Book:</label>
+                <input type="text" id="book" name="book" placeholder="Book Title"><br />
+                <input type="submit" value="Search for Book"> <br />
+            </form>
+        </div>
+    </div>
+
+
     <div class="search">
         <form method="POST" action="books_page.php">
             <label for="book">Search by Book:</label>

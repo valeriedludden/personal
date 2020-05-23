@@ -26,7 +26,8 @@ foreach ($db->query($dbbq) as $row)
 }
 
 
-echo '<div class="container">
-
-</div>'
+echo ''
 ?>
+<div class="container">
+
+</div>

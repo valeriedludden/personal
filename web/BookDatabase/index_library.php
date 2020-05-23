@@ -1,8 +1,15 @@
 <?php
 include "header.php";
 require "dbConnect.php";
+
+//$statement = $db->query('SELECT username, password FROM note_user');
+//$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
 $db = get_db();
-foreach ($db->query('SELECT title, location, author FROM book') as $row)
+$dbArray = $db->query('SELECT title, location, author FROM book');
+$results = $dbArray->fetchAll(PDO::FETCH_ASSOC);
+foreach ($results as $row)
 {
     echo 'Title - ' . $row['title'] . ' ';
     echo 'Author - ' . $row['author'] . ' ';

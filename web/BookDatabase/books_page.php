@@ -6,7 +6,7 @@ $db = get_db();
 $book1 = 'EMMA';
 $book = $_POST["book"];
 //$dbq = "SELECT title, author FROM book";
-$dbq = "SELECT title, name FROM book b, author a WHERE title ='$book' AND b.author = a.id";
+$dbq = "SELECT b.title, a.name FROM book b, author a WHERE title ='$book' AND b.author = a.id";
 $dbq1 = "SELECT title, author FROM book WHERE title = '$book'";
 $dbq2 = "SELECT title, author FROM book WHERE title = '$book1'";
 
@@ -24,7 +24,7 @@ foreach ($db->query($dbq) as $row)
     echo '<b>';
     echo $row['title'];
     echo ' : author id = ';
-    echo $row['author'];
+    echo $row['name'];
     echo '</b>';
     echo "the first one";
     echo '</b>';

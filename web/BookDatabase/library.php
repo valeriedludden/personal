@@ -37,6 +37,7 @@ foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l,
                 <label for="location">Receive Newsletter:</label></br>
                 Guest Room <input type="radio" name="location" value=1></br>
                 East Book Shelf<input type="radio" name="location" value=2></br>
+                <input type="submit" value="Search by Location"> <br/>
             </form>
         </div>
     </div>

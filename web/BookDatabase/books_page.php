@@ -3,9 +3,9 @@ include "header.php";
 echo "Books Page";
 require "dbConnect.php";
 $db = get_db();
-$book = "EMMA";
+//$book = "EMMA";
 //$book = $_POST["book"];
-$bdq = "SELECT title, author FROM book WHERE title = $book";
+$bdq = 'SELECT title, author FROM book WHERE title ="EMMA"';
 
 echo "THE book you picked was - " . $book;
 //$bookQuery = 'SELECT title, author FROM book WHERE title=';

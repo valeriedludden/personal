@@ -25,9 +25,11 @@ catch (PDOException $ex)
 $dbUrl = getenv('DATABASE_URL');
 # You SHOULD do this:
 $dbUser = $dbOpts["user"];
-foreach ($db->query('SELECT *') as $row)
+foreach ($db->query('SELECT book, location, author') as $row)
 {
-    echo $row;
+    echo 'book' . $row['book'] . ' ';
+    echo 'author' . $row['author'] . ' ';
+    echo 'location' . $row['location'] . '';
     echo '<br/>';
 }
 ?>

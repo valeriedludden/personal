@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Valerie</title>
+    <title>Valerie Ludden</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,10 +42,6 @@
     <li class="nav-item">
         <?php $project_link = "Projects"; ?>
         <a class="nav-link links" href="week2personal/projects.php"><?php echo $project_link ?></a>
-    </li>
-    <li class="nav-item">
-        <?php $project_link = "Week 3 Shopping Cart"; ?>
-        <a class="nav-link links" href="week3ShoppingCart/browse.php"><?php echo $project_link ?></a>
     </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Other Stuff</a>

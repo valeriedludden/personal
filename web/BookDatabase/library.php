@@ -4,8 +4,7 @@ require "dbConnect.php";
 
 $db = get_db();
 
-foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l, author a WHERE b.author = a.id AND b.location = l.id') as $row)
-{
+foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l, author a WHERE b.author = a.id AND b.location = l.id') as $row) {
     echo 'Title - ' . $row['title'] . ' ';
     echo 'Author - ' . $row['author'] . ' ';
     echo 'Location - ' . $row['location'] . '';
@@ -23,8 +22,8 @@ foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l,
         <div class="card-body">
             <form method="POST" action="books_page.php">
                 <label for="book">Search by Book:</label>
-                <input type="text" id="book" name="book" placeholder="Book Title"><br />
-                <input type="submit" value="Search for Book"> <br />
+                <input type="text" id="book" name="book" placeholder="Book Title"><br/>
+                <input type="submit" value="Search for Book"> <br/>
             </form>
         </div>
     </div>
@@ -35,9 +34,9 @@ foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l,
         </div>
         <div class="card-body">
             <form method="POST" action="location.php">
-                <label for="location">Receive Newsletter:</label>
-               Guest Room <input type="radio" name="location" value="Guest">
-              East Book Shelf<input type="radio" name="location" value="East">
+                <label for="location">Receive Newsletter:</label></br>
+                Guest Room <input type="radio" name="location" value=1></br>
+                East Book Shelf<input type="radio" name="location" value=2></br>
             </form>
         </div>
     </div>
@@ -49,8 +48,8 @@ foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l,
         <div class="card-body">
             <form method="POST" action="authors.php">
                 <label for="author">Search by Author:</label>
-                <input type="text" id="author" name="author" placeholder="Author Name"><br />
-                <input type="submit" value="Search for Author"> <br />
+                <input type="text" id="author" name="author" placeholder="Author Name"><br/>
+                <input type="submit" value="Search for Author"> <br/>
             </form>
         </div>
     </div>

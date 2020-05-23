@@ -48,8 +48,8 @@ INSERT INTO genre VALUES (DEFAULT,'puzzles');
 INSERT INTO author VALUES (DEFAULT,'AUSTEN, JANE');
 INSERT INTO author VALUES (DEFAULT,'HEYER, GEORGETTE');
 
-INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EMMA',1,4,5);
-INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT,'BLACK SHEEP',2,7,3);
+INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EMMA',1,4,1);
+INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT,'BLACK SHEEP',2,7,2);
 
 
 

@@ -17,19 +17,24 @@ a{
 
 .g-one{
     background-color: lightgoldenrodyellow;
+    width: 40%;
 }
 .g-two{
     background-color: lightskyblue;
+    width: 30%;
 }
 .g-three{
     background-color: #f5c6cb;
+    width: 30%;
 }
 .container {
     width: 80%;
+    display: flex;
 }
 .list-group-item {
     width: auto;
 }
 .list-group {
     width: 100%;
+    display: flex;
 }

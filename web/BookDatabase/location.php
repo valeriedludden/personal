@@ -11,13 +11,13 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 echo "<h1>Below is a list of books located in";
 echo $results["location"];
 echo "</h1></br>";
-echo "<div class='container'>
-<ul class='list-group list-group-horizontal'><b>
+echo "<b><div class='container'>
+<ul class='list-group list-group-horizontal'>
         <li class='list-group-item g-one'>Title</li>
         <li class='list-group-item g-two'>Author</li>
         <li class='list-group-item g-three'>Genre</li>
-    </b></ul>
-</div>";
+    </ul>
+</div></b>";
 
 foreach ($results as $row) {
     echo "<div class='container'>

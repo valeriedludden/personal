@@ -6,6 +6,8 @@ $db = get_db();
 
 $author = strtoupper($_POST["author"]);
 $dbbq = "SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE a.name ='$author' AND b.author = a.id AND b.location = l.id AND b.genre = g.id";
+
+echo "The author is - " . $author;
 foreach ($db->query($dbbq) as $row)
 {
     echo '<div class="container">

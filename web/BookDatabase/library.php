@@ -34,7 +34,6 @@ $db = get_db();
         </div>
         <div class="card-body">
             <form method="POST" action="location.php">
-                <label for="location">Receive Newsletter:</label></br>
                 Den Bookcase Left <input type="radio" name="location" value=1></br>
                 Den Bookcase Right<input type="radio" name="location" value=2></br>
                 Barrister Bookcase West<input type="radio" name="location" value=3></br>
@@ -44,9 +43,13 @@ $db = get_db();
                 <input type="submit" value="Search by Location"> <br/>
             </form>
         </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Genre
+        </div>
         <div class="card-body">
             <form method="POST" action="genre.php">
-                <label for="location">Receive Newsletter:</label></br>
                 Comedy <input type="radio" name="genre" value=1></br>
                 Biography <input type="radio" name="genre" value=2></br>
                 Fiction <input type="radio" name="genre" value=3></br>
@@ -61,22 +64,10 @@ $db = get_db();
                 Poems <input type="radio" name="genre" value=12></br>
                 Self Improvement <input type="radio" name="genre" value=13></br>
                 Animals/Nature <input type="radio" name="genre" value=14></br>
-
-                <input type="submit" value="Search by Location"> <br/>
+                <input type="submit" value="Search by Genre"> <br/>
             </form>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            Author
-        </div>
-        <div class="card-body">
-            <form method="POST" action="authors.php">
-                <label for="author">Search by Author:</label>
-                <input type="text" id="author" name="author" placeholder="Author Name"><br/>
-                <input type="submit" value="Search for Author"> <br/>
-            </form>
-        </div>
-    </div>
+
 </div>

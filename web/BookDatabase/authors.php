@@ -20,7 +20,7 @@ foreach ($results as $row)
 {
     echo "<div class='container'>
     <ul class='list-group list-group-horizontal'>
-        <li class='list-group-item'>" .$row['author']."</li>
+        <li class='list-group-item'>" .$row['name']."</li>
         <li class='list-group-item'>" .$row['title']."</li>
         <li class='list-group-item'>" .$row['location']."</li>
         <li class='list-group-item'>" .$row['genre']."</li>
@@ -28,11 +28,4 @@ foreach ($results as $row)
 </div>";
 
 }
-echo '<div class="container">
-    <ul class="list-group list-group-horizontal">
-        <li class="list-group-item">Bottop</li>
-        <li class="list-group-item">zushduvhzdvxc</li>
-        <li class="list-group-item">jkhdksfgksjdfhkjsdfks</li>
-    </ul>
-</div>';
 ?>

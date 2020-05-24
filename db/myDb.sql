@@ -298,7 +298,7 @@ INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'DONT SWE
 INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EASY DOES IT  (household problems)',165,11,1);
 INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'ELIZABETH',18,3,2);
 INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EMILY POSTS ETIQUETTE [15TH ED.]',131,12,3);
-INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EMMA ( 2 BOOKS )',8,3,4);
+INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EMMA',8,3,4);
 INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'ENGLISH HERITAGE',103,9,2);
 INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'ERDDIG - THE NATIONAL TRUST',34,9,2);
 INSERT INTO book (id, title, author, genre, location) VALUES (DEFAULT, 'EUROPE THROUGH THE BACK DOOR',153,4,5);

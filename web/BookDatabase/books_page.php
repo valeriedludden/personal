@@ -23,7 +23,7 @@ else {
 }
 
 
-foreach ($db->query($dbbq) as $row)
+foreach ($results as $row)
 {
     echo "<div class='container'>
     <ul class='list-group list-group-horizontal'>

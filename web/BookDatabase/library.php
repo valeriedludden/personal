@@ -27,7 +27,7 @@ $db = get_db();
         <div class="card-body">
             <form method="POST" action="authors.php">
                 <label for="book">Search by Book:</label>
-                <input type="text" id="author" name="author" placeholder="Name of Author"><br/>
+                <input type="text" id="author" name="author" placeholder="Last, First"><br/>
                 <input type="submit" value="Search Author"> <br/>
             </form>
         </div>

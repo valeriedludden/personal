@@ -9,7 +9,7 @@ $statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if(count($results) > 0){
-    echo "Here is information on the book you searched for ";
+    echo "<h1><b>Here is information on the book you searched for </b></h1>";
     echo "<b><div class='container'>
 <ul class='list-group list-group-horizontal'>
         <li class='list-group-item g-one'>Title</li>

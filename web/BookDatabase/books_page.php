@@ -4,7 +4,7 @@ include "header.php";
 require "dbConnect.php";
 $db = get_db();
 
-$book = strtoupper($_POST["book"]);
+$book = strtoupper(htmlspecialchars($_POST["book"]));
 $statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE title ='$book' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
@@ -42,3 +42,5 @@ echo ''
 <div class="container">
 
 </div>
+</body>
+</html>

@@ -14,7 +14,7 @@ echo "<ul class='list-group list-group-horizontal'>
         <li class='list-group-item'>Author</li>
         <li class='list-group-item'>Genre</li>
     </ul>
-</div>"
+</div>";
 
 foreach ($results as $row)
 {

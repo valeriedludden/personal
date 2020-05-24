@@ -9,7 +9,7 @@ $statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 $locs = ['Den Bookcase Left','Den Bookcase Right', 'Barrister Bookcase West', 'Barrister Bookcase East', 'Guest Bedroom Shelves', 'STE Michelle Shopping Bag'];
 
-echo "<h1>Below is a list of books located in $locs[$location]</h1></br>";
+echo "<h1>Below is a list of books located in the $locs[$location]</h1></br>";
 echo "<b><div class='container'>
 <ul class='list-group list-group-horizontal'>
         <li class='list-group-item g-one'>Title</li>

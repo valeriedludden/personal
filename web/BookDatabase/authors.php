@@ -5,30 +5,28 @@ require "dbConnect.php";
 $db = get_db();
 
 $author = strtoupper($_POST["author"]);
-$dbbq = "SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE a.name ='$author' AND b.author = a.id AND b.location = l.id AND b.genre = g.id";
+//$dbbq = "SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE a.name ='$author' AND b.author = a.id AND b.location = l.id AND b.genre = g.id";
+$statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE a.name ='$author' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
+$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-echo "The author is - " . $author;
-foreach ($db->query($dbbq) as $row)
+if(count($results) > 0){
+    echo "<h1>Below is a list of books by . $author . </h1>";
+}
+else{
+    echo "<h1>Sorry there are no books by . $author . in this library</h1>";
+}
+
+foreach ($results as $row)
 {
-    echo '<div class="container">
-    <ul class="list-group list-group-horizontal">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
+    echo "<div class='container'>
+    <ul class='list-group list-group-horizontal'>
+        <li class='list-group-item'>" .$row['author']."</li>
+        <li class='list-group-item'>" .$row['title']."</li>
+        <li class='list-group-item'>" .$row['location']."</li>
+        <li class='list-group-item'>" .$row['genre']."</li>
     </ul>
-</div>';
-    echo '<b>';
-    echo $row['title'];
-    echo ' : author = ';
-    echo $row['name'];
-    echo ' : author = ';
-    echo $row['location'];
-    echo ' : location = ';
-    echo $row['genre'];
-    echo ' : genre = ';
+</div>";
 
-    echo '</b>';
-    echo '<p/>';
 }
 echo '<div class="container">
     <ul class="list-group list-group-horizontal">
@@ -38,9 +36,3 @@ echo '<div class="container">
     </ul>
 </div>';
 ?>
-
-<ul class="list-group list-group-horizontal-md">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-</ul>

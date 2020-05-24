@@ -1,19 +1,17 @@
 <?php
 include "header.php";
-echo "Authors Page";
 require "dbConnect.php";
 $db = get_db();
 
 $author = strtoupper($_POST["author"]);
-//$dbbq = "SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE a.name ='$author' AND b.author = a.id AND b.location = l.id AND b.genre = g.id";
 $statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE a.name ='$author' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if(count($results) > 0){
-    echo "<h1>Below is a list of books by . $author . </h1>";
+    echo "<h1>Below is a list of books by  $author </h1>";
 }
 else{
-    echo "<h1>Sorry there are no books by . $author . in this library</h1>";
+    echo "<h1>Sorry there are no books by $author in this library</h1>";
 }
 
 foreach ($results as $row)

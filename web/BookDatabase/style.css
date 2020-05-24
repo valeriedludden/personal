@@ -14,3 +14,22 @@
 a{
     color: floralwhite;
 }
+
+.g-one{
+    background-color: lightgoldenrodyellow;
+}
+.g-two{
+    background-color: lightskyblue;
+}
+.g-three{
+    background-color: #f5c6cb;
+}
+.container {
+    width: 80%;
+}
+.list-group-item {
+    width: auto;
+}
+.list-group {
+    width: 100%;
+}

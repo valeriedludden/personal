@@ -12,19 +12,19 @@ echo "<h1>Below is a list of books located in";
 echo $results["location"];
 echo "</h1></br>";
 echo "<div class='container'>
-<ul class='list-group list-group-horizontal'>
-        <li class='list-group-item'>Title</li>
-        <li class='list-group-item'>Author</li>
-        <li class='list-group-item'>Genre</li>
-    </ul>
+<ul class='list-group list-group-horizontal'><b>
+        <li class='list-group-item g-one'>Title</li>
+        <li class='list-group-item g-two'>Author</li>
+        <li class='list-group-item g-three'>Genre</li>
+    </b></ul>
 </div>";
 
 foreach ($results as $row) {
     echo "<div class='container'>
     <ul class='list-group list-group-horizontal'>
-        <li class='list-group-item'>" . $row['title'] . "</li>
-        <li class='list-group-item'>" . $row['name'] . "</li>
-        <li class='list-group-item'>" . $row['genre'] . "</li>
+        <li class='list-group-item  g-one'>" . $row['title'] . "</li>
+        <li class='list-group-item  g-two'>" . $row['name'] . "</li>
+        <li class='list-group-item  g-three'>" . $row['genre'] . "</li>
     </ul>
 </div>";
 

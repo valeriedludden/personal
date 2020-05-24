@@ -34,6 +34,7 @@ a{
 .libraryContainer {
     width: 90%;
     display: flex;
+    margin: auto;
 }
 .list-group-item {
     width: auto;
@@ -41,4 +42,7 @@ a{
 .list-group {
     width: 100%;
     display: flex;
+}
+h1 {
+    text-align: center;
 }

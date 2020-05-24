@@ -4,7 +4,7 @@ require "dbConnect.php";
 $db = get_db();
 
 $location = $_POST["location"];
-$locationName = $db->query("SELECT location FROM location WHERE id = $location");
+$locationName = $db->query("SELECT l.location FROM location l WHERE l.id = $location");
 $statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE l.id ='$location' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 

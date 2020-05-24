@@ -3,17 +3,10 @@ include "header.php";
 require "dbConnect.php";
 
 $db = get_db();
-
-//foreach ($db->query('SELECT b.title, l.location, a.name FROM book b, location l, author a WHERE b.author = a.id AND b.location = l.id') as $row) {
-//    echo 'Title - ' . $row['title'] . ' ';
-//    echo 'Author - ' . $row['author'] . ' ';
-//    echo 'Location - ' . $row['location'] . '';
-//    echo '<br/>';
-//}
 ?>
 <body>
 
-<div class="container">
+<div class="libraryContainer">
 
     <div class="card">
         <div class="card-header">
@@ -24,6 +17,18 @@ $db = get_db();
                 <label for="book">Search by Book:</label>
                 <input type="text" id="book" name="book" placeholder="Book Title"><br/>
                 <input type="submit" value="Search for Book"> <br/>
+            </form>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            Books by Author
+        </div>
+        <div class="card-body">
+            <form method="POST" action="authors.php">
+                <label for="book">Search by Book:</label>
+                <input type="text" id="author" name="book" placeholder="Name of Author"><br/>
+                <input type="submit" value="Search Author"> <br/>
             </form>
         </div>
     </div>

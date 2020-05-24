@@ -5,25 +5,34 @@ require "dbConnect.php";
 $db = get_db();
 
 $book = strtoupper($_POST["book"]);
-$dbbq = "SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE title ='$book' AND b.author = a.id AND b.location = l.id AND b.genre = g.id";
+$statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE title ='$book' AND b.author = a.id AND b.location = l.id AND b.genre = g.id";
+$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-echo "Books Page and the book is - " . $book;
+if(count($results) > 0){
+    echo "Here is information on the book you searched for ";
+    echo "<b><div class='container'>
+<ul class='list-group list-group-horizontal'>
+        <li class='list-group-item g-one'>Title</li>
+        <li class='list-group-item g-two'>Author</li>
+        <li class='list-group-item g-three'>Genre</li>
+    </ul>
+</div></b>";
+}
+else {
+    echo "I am sorry, there is no book with that title in this library";
+}
+
 
 foreach ($db->query($dbbq) as $row)
 {
-    echo '<p>';
-    echo '<b>';
-    echo $row['title'];
-    echo ' : author = ';
-    echo $row['name'];
-    echo ' : author = ';
-    echo $row['location'];
-    echo ' : location = ';
-    echo $row['genre'];
-    echo ' : genre = ';
-
-    echo '</b>';
-    echo '<p/>';
+    echo "<div class='container'>
+    <ul class='list-group list-group-horizontal'>
+        <li class='list-group-item g-one''>" . $row['title'] . "</li>
+        <li class='list-group-item g-two''>" . $row['name'] . "</li>
+        <li class='list-group-item g-three''>" . $row['location'] . "</li>
+        <li class='list-group-item g-three''>" . $row['genre'] . "</li>
+    </ul>
+</div>";
 }
 
 

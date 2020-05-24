@@ -11,20 +11,20 @@ $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 echo "<h1>Below is a list of books located in";
 echo $results["location"];
 echo "</h1></br>";
-echo "<ul class='list-group list-group-horizontal'>
+echo "<div class='container'>
+<ul class='list-group list-group-horizontal'>
         <li class='list-group-item'>Title</li>
         <li class='list-group-item'>Author</li>
         <li class='list-group-item'>Genre</li>
     </ul>
 </div>";
 
-foreach ($results as $row)
-{
+foreach ($results as $row) {
     echo "<div class='container'>
     <ul class='list-group list-group-horizontal'>
-        <li class='list-group-item'>" .$row['title']."</li>
-        <li class='list-group-item'>" .$row['name']."</li>
-        <li class='list-group-item'>" .$row['genre']."</li>
+        <li class='list-group-item'>" . $row['title'] . "</li>
+        <li class='list-group-item'>" . $row['name'] . "</li>
+        <li class='list-group-item'>" . $row['genre'] . "</li>
     </ul>
 </div>";
 

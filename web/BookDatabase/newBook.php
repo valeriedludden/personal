@@ -13,6 +13,7 @@ echo $bId;
 
 //$query = "SELECT (b. id, b.title, a.name, l.location, g.genre) FROM book b, author a, location l, genre g WHERE b.id ='$bId' AND b.author = a.id AND b.location = l.id AND b.genre = g.id)";
 $query = "SELECT (id, name) FROM author";
+$statement = $db->query($query);
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 echo $results;
@@ -33,5 +34,5 @@ foreach ($results as $row) {
     </html>
     <?php
 }
-session_unset();
+//session_unset();
 ?>

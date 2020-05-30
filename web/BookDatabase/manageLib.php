@@ -54,6 +54,7 @@ $addGenre = $_POST['add-genre'];
 ?>
 <div class="container">
     <div class="manTitle "><h1>Add a book to the library </h1></div>
+    <div class="test">Hello World</div>
     <div class="addContainer">
         <form method="POST" action="newBook.php">
             <label class="addTitle" for="add-book">Title:</label>

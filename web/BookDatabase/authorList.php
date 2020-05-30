@@ -19,7 +19,7 @@ $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($rs as $r) {
 
-   ?>
+    ?>
 
     <p>ID: <?=$r['id'] ?> - </p>
     <p>NAME: <?=$r['name'] ?></p><br>
@@ -33,5 +33,6 @@ foreach ($rs as $r) {
     </html>
     <?php
 }
-//session_unset();
+$lastAuthorId = $db->lastInsertId("author_id_seq");
+echo "The last Author ID is: ". $lastAuthorId;
 ?>

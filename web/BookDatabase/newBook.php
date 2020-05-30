@@ -21,8 +21,8 @@ foreach ($rs as $r) {
 //    ?>
     <!--    <div>-->
 <!--    <h1>Stuff: --><?//= $stuff ?><!-- - </h1>-->
-    <p>ID: <?= $r['id'] ?> - </p>
-    <p>NAME: <?= $r['location'] ?></p><br>
+    <p>ID: <?php $r['id'] ?> - </p>
+    <p>NAME: <?php $r['location'] ?></p><br>
     <!--        <h1>Title: --><?//= $row['b.title'] ?><!--</h1><br>-->
     <!--        <h1>Author: --><?//= $row['a.name'] ?><!--</h1><br>-->
     <!--        <h1>Location: --><?//= $row['l.location'] ?><!--</h1><br>-->

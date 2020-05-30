@@ -39,7 +39,6 @@ $statement = $db->prepare($query);
 //        $statement->bindValue(':genreId', $addGenre);
 //        $statement->bindValue(':locationId', $addLocation);
 //
-        $statement->execute();
 }
 catch (Exception $ex)
 {

@@ -34,5 +34,6 @@ foreach ($rs as $r) {
     <?php
 }
 $lastAuthorId = $db->lastInsertId("author_id_seq");
-echo "The last Author ID is: ". $lastAuthorId;
+echo "The last Author ID is: ";
+echo  $lastAuthorId;
 ?>

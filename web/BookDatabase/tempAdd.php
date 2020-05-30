@@ -48,6 +48,6 @@ catch (Exception $ex)
     echo "Sorry there was a problem adding your book because " . $ex;
     die();
 }
-//header("Location: newBook.php");
-//die();
+header("Location: newBook.php");
+die();
 ?>

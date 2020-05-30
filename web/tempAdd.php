@@ -12,7 +12,7 @@ $addGenre = $_POST['add-genre'];
 try
 {
     // Add the Scripture
-$query = 'INSERT INTO author(id, name) VALUES(DEFAULT, :addAuthor)';
+$query = 'INSERT INTO author(name) VALUES(:addAuthor)';
 $statement = $db->prepare($query);
 
 

@@ -15,6 +15,7 @@ echo $stuff;
 
 $st = $db->query('SELECT id, name FROM author');
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
+$lastAuthorId = $db->lastInsertId("author_id_seq");
 
 foreach ($rs as $r) {
 
@@ -33,4 +34,5 @@ foreach ($rs as $r) {
     <?php
 }
 //session_unset();
+echo "The last Author ID is: ". $lastAuthorId;
 ?>

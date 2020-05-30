@@ -18,15 +18,19 @@ echo $results;
 foreach ($results as $row) {
 //
 //    ?>
-<!--    <div>-->
-        <h1>Stuff: <?= $stuff ?></h1><br>
-        <h1>Stuff: <?= $row['id'] ?></h1><br>
-        <h1>Stuff: <?= $row['name'] ?></h1><br>
-<!--        <h1>Title: --><?//= $row['b.title'] ?><!--</h1><br>-->
-<!--        <h1>Author: --><?//= $row['a.name'] ?><!--</h1><br>-->
-<!--        <h1>Location: --><?//= $row['l.location'] ?><!--</h1><br>-->
-<!--        <h1>Genre: --><?//= $row['g.genre'] ?><!--</h1><br>-->
-<!--    </div>-->
-<!--    --><?php
+    <!--    <div>-->
+    <h1>Stuff: <?= $stuff ?></h1><br>
+    <h1>Stuff: <?= $row['id'] ?></h1><br>
+    <h1>Stuff: <?= $row['name'] ?></h1><br>
+    <!--        <h1>Title: --><?//= $row['b.title'] ?><!--</h1><br>-->
+    <!--        <h1>Author: --><?//= $row['a.name'] ?><!--</h1><br>-->
+    <!--        <h1>Location: --><?//= $row['l.location'] ?><!--</h1><br>-->
+    <!--        <h1>Genre: --><?//= $row['g.genre'] ?><!--</h1><br>-->
+    <!--    </div>-->
+    <!--    -->
+    </body>
+    </html>
+    <?php
 }
+session_unset();
 ?>

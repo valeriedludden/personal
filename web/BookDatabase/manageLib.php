@@ -17,7 +17,7 @@ try
 
     // We do this by preparing the query with placeholder values
 
-    $statement = $db->prepare('INSERT INTO author(id, name) VALUES(:aID, :addAuthor)');
+    $statement = $db->prepare('INSERT INTO author(id, name) VALUES(DEFAULT, :addAuthor)');
 
     // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
@@ -30,7 +30,7 @@ try
     $statement->execute();
 
     // get the new id
-    $authorId = $db->lastInsertId("author_is_seq");
+//    $authorId = $db->lastInsertId("author_is_seq");
 // // Now go through each topic id in the list from the user's checkboxes
 //
 //        $statement = $db->prepare("INSERT INTO book(id, title, author, genre, location) VALUES(DEFAULT, ':title', :authorId, :genreId, :locationid)");

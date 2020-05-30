@@ -31,17 +31,17 @@ try
 
     // get the new id
     $authorId = $db->lastInsertId("author_is_seq");
- // Now go through each topic id in the list from the user's checkboxes
-
-        $statement = $db->prepare("INSERT INTO book(id, title, author, genre, location) VALUES(DEFAULT, ':title', :authorId, :genreId, :locationid)");
-
-        // Then, bind the values
-        $statement->bindValue(':title', $addTitle);
-        $statement->bindValue(':authorId', $authorId);
-        $statement->bindValue(':genreId', $addGenre);
-        $statement->bindValue(':locationId', $addLocation);
-
-        $statement->execute();
+// // Now go through each topic id in the list from the user's checkboxes
+//
+//        $statement = $db->prepare("INSERT INTO book(id, title, author, genre, location) VALUES(DEFAULT, ':title', :authorId, :genreId, :locationid)");
+//
+//        // Then, bind the values
+//        $statement->bindValue(':title', $addTitle);
+//        $statement->bindValue(':authorId', $authorId);
+//        $statement->bindValue(':genreId', $addGenre);
+//        $statement->bindValue(':locationId', $addLocation);
+//
+//        $statement->execute();
 }
 catch (Exception $ex)
 {

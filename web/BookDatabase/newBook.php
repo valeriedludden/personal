@@ -13,17 +13,16 @@ echo $bId;
 
 //$query = "SELECT (b. id, b.title, a.name, l.location, g.genre) FROM book b, author a, location l, genre g WHERE b.id ='$bId' AND b.author = a.id AND b.location = l.id AND b.genre = g.id)";
 //$query = "SELECT (id, name) FROM author";
-$statement = $db->query("SELECT (id, name) FROM author");
+$statement = $db->query("SELECT (id, location) FROM location");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-echo $results;
 foreach ($results as $row) {
 //
 //    ?>
     <!--    <div>-->
 <!--    <h1>Stuff: --><?//= $stuff ?><!-- - </h1>-->
     <p>ID: <?= $row['id'] ?> - </p>
-    <p>NAME: <?= $row['name'] ?></p><br>
+    <p>NAME: <?= $row['location'] ?></p><br>
     <!--        <h1>Title: --><?//= $row['b.title'] ?><!--</h1><br>-->
     <!--        <h1>Author: --><?//= $row['a.name'] ?><!--</h1><br>-->
     <!--        <h1>Location: --><?//= $row['l.location'] ?><!--</h1><br>-->

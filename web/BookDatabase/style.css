@@ -46,7 +46,7 @@ a{
 h1 {
     text-align: center;
 }
-.addTitle {
+label {
     font-weight: bold;
     color: indigo;
 }

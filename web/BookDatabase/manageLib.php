@@ -9,8 +9,7 @@ $db = get_db();
 
 ?>
 <div class="container">
-    <div><h1>Add a book to the library </h1></div>
-    </br>
+    <div class="manTitle"><h1>Add a book to the library </h1></div>
     <div class="addContainer">
         <form method="POST" action="manageLib.php">
             <label class="addTitle" for="add-book">Title:</label>

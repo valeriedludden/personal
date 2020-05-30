@@ -2,10 +2,6 @@
     background-color: cadetblue;
     font-size: large;
 }
-.hero {
-
-
-}
 .heroImage {
     height: 400px;
     object-fit: cover;
@@ -14,7 +10,6 @@
 a{
     color: floralwhite;
 }
-
 .g-one{
     background-color: lightgoldenrodyellow;
     width: 40%;
@@ -49,4 +44,8 @@ h1 {
 label {
     font-weight: bold;
     color: indigo;
+}
+.manTitle{
+    width: 100%;
+    text-align: center;
 }

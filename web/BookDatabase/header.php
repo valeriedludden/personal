@@ -23,6 +23,10 @@ session_start();
         <?php $library_link = "Library"; ?>
         <a class="nav-link links" href="library.php"><?php echo $library_link ?></a>
     </li>
+    <li class="nav-item">
+        <?php $manage_link = "Manage Library"; ?>
+        <a class="nav-link links" href="manageLib.php"><?php echo $manage_link ?></a>
+    </li>
 <!--    <li class="nav-item">-->
 <!--        --><?php //$book_link = "Books"; ?>
 <!--        <a class="nav-link links" href="books_page.php">--><?php //echo $book_link ?><!--</a>-->

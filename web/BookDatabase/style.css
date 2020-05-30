@@ -46,3 +46,6 @@ a{
 h1 {
     text-align: center;
 }
+.addTitle {
+    font-weight: bold;
+}

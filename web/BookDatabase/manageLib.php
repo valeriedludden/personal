@@ -10,14 +10,15 @@ $db = get_db();
 
 ?>
 <div class="container">
-   <h1>Add a book to the library </h1></br>
-    <form>
+    <div><h1>Add a book to the library </h1></div>
+    </br>
+    <div class="addContainer">
         <form method="POST" action="manageLib.php">
-            <label for="add-book">Title:</label>
+            <label class="addTitle" for="add-book">Title:</label>
             <input type="text" id="add-book" name="add-book" placeholder="Book Title"><br/>
-            <label for="add-author">Author</label>
+            <label class="addTitle" for="add-author">Author</label>
             <input type="text" id="add-book" name="add-author" placeholder="Last, First"><br/>
-            <label for="add-genre">Pick a Genre</label>
+            <label class="addTitle" for="add-genre">Pick a Genre</label>
             Comedy <input type="radio" name="add-genre" value=1></br>
             Biography <input type="radio" name="add-genre" value=2></br>
             Fiction <input type="radio" name="add-genre" value=3></br>
@@ -33,7 +34,7 @@ $db = get_db();
             Self Improvement <input type="radio" name="add-genre" value=13></br>
             Animals/Nature <input type="radio" name="add-genre" value=14></br>
 
-            <label for="add-location">Pick a Location:</label>
+            <label class="addTitle" for="add-location">Pick a Location:</label>
             Den Bookcase Left <input type="radio" name="add-location" value=1></br>
             Den Bookcase Right<input type="radio" name="add-location" value=2></br>
             Barrister Bookcase West<input type="radio" name="add-location" value=3></br>
@@ -43,7 +44,7 @@ $db = get_db();
 
             <input type="submit" value="Add Book"> <br/>
         </form>
-    </form>
+    </div>
 </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 include "header.php";
-
+include "style.css";
 require "dbConnect.php";
 $db = get_db();
 

@@ -31,6 +31,10 @@ session_start();
         <?php $a_link = "Authors"; ?>
         <a class="nav-link links" href="authorList.php"><?php echo $a_link ?></a>
     </li>
+    <li class="nav-item">
+        <?php $b_link = "Books List"; ?>
+        <a class="nav-link links" href="listBooks.php"><?php echo $b_link ?></a>
+    </li>
 <!--    <li class="nav-item">-->
 <!--        --><?php //$book_link = "Books"; ?>
 <!--        <a class="nav-link links" href="books_page.php">--><?php //echo $book_link ?><!--</a>-->

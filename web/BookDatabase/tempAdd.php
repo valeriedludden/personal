@@ -14,31 +14,22 @@ try
     // Add the Scripture
 $query = 'INSERT INTO author(name) VALUES(:addAuthor)';
 $statement = $db->prepare($query);
+$statement->bindValue(':addAuthor', $addAuthor);
+
+$statement->execute();
 
 
-
-    // Now we bind the values to the placeholders. This does some nice things
-    // including sanitizing the input with regard to sql commands.
-    $statement->bindValue(':addAuthor', $addAuthor);
-//    $statement->bindValue(':aID', $chapter);
-//    $statement->bindValue(':verse', $verse);
-//    $statement->bindValue(':content', $content);
+    $authorId = $db->lastInsertId("author_is_seq");
 
 
-    $statement->execute();
+        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(':title', :authorId, :genreId, :locationid)");
 
-    // get the new id
-//    $authorId = $db->lastInsertId("author_is_seq");
-// // Now go through each topic id in the list from the user's checkboxes
-//
-//        $statement = $db->prepare("INSERT INTO book(id, title, author, genre, location) VALUES(DEFAULT, ':title', :authorId, :genreId, :locationid)");
-//
-//        // Then, bind the values
-//        $statement->bindValue(':title', $addTitle);
-//        $statement->bindValue(':authorId', $authorId);
-//        $statement->bindValue(':genreId', $addGenre);
-//        $statement->bindValue(':locationId', $addLocation);
-//
+        // Then, bind the values
+        $statement->bindValue(':title', $addTitle);
+        $statement->bindValue(':authorId', $authorId);
+        $statement->bindValue(':genreId', $addGenre);
+        $statement->bindValue(':locationId', $addLocation);
+
 }
 catch (Exception $ex)
 {

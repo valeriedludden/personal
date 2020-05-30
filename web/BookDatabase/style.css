@@ -2,54 +2,67 @@
     background-color: cadetblue;
     font-size: large;
 }
+
 .heroImage {
     height: 400px;
     object-fit: cover;
     width: 100%;
 }
-a{
+
+a {
     color: floralwhite;
 }
-.g-one{
+
+.g-one {
     background-color: lightgoldenrodyellow;
     width: 40%;
 }
-.g-two{
+
+.g-two {
     background-color: lightskyblue;
     width: 30%;
 }
-.g-three{
+
+.g-three {
     background-color: #f5c6cb;
     width: 30%;
 }
+
 .container {
     width: 80%;
     display: flex;
 }
+
 .libraryContainer {
     width: 90%;
     display: flex;
     margin: auto;
 }
+
 .list-group-item {
     width: auto;
 }
+
 .list-group {
     width: 100%;
     display: flex;
 }
+
 h1 {
     text-align: center;
 }
+
 label {
     font-weight: bold;
     color: indigo;
 }
-.manTitle{
+
+.manTitle {
     width: 100%;
     text-align: center;
     color: rebeccapurple;
 }
-.test{
+
+.test {
     color: purple;
 }

@@ -2,52 +2,34 @@
 include "header.php";
 require "dbConnect.php";
 $db = get_db();
+$book = strtoupper($_POST["delete-title"]);
+$statement = $db->query("SELECT b.id, b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE title ='$book' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
+$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-$addAuthor = $_POST['add-author'];
-$addTitle = $_POST['add-title'];
-$addLocation = $_POST['add-location'];
-$addGenre = $_POST['add-genre'];
-//echo "Genre - ";
-//echo $addGenre;
-//echo " Author - ";
-//echo $addAuthor;
-//echo " Location - ";
-//echo $addLocation;
-//echo " Title - ";
-//echo $addTitle;
-//echo " Your genre id is ";
-$query2 = "SELECT id, genre FROM genre WHERE genre = '$addGenre'";
-$genId = $db->query($query2);
-$gId = 0;
-foreach ($genId as $g) {
-    $gId = $g["id"];
+if (count($results) > 0) {
+    echo "<h1><b>Is the the book you want to delete? </b></h1>";
+    foreach ($results as $row) {
+        ?>
+        <div class='container'>
+            <ul class='list-group list-group-horizontal'>
+                <li class='list-group-item g-one'><?= $row['title'] ?></li>
+                <li class='list-group-item g-two'><?= $row['name'] ?></li>
+                <li class='list-group-item g-three'><?= $row['location'] ?></li>
+                <li class='list-group-item g-three'><?= $row['genre'] ?></li>
+            </ul>
+        </div>
+
+        <?php
+    }
+} else {
+    echo "I am sorry, there is no book with that title in this library";
 }
 
-try {
-    $query = 'INSERT INTO author(name) VALUES(:addAuthor)';
-    $statement = $db->prepare($query);
-    $statement->bindValue(':addAuthor', $addAuthor);
-    $statement->execute();
 
-    $authorId = $db->lastInsertId("author_id_seq");
-
-    $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId)");
-
-    // Bind the values
-    $statement->bindValue(':title', $addTitle);
-    $statement->bindValue(':authorId', $authorId);
-    $statement->bindValue(':genreId', $gId);
-    $statement->bindValue(':locationId', $addLocation);
-
-    $statement->execute();
-
-    $bookId = $db->lastInsertId("book_id_seq");
-
-} catch (Exception $ex) {
-    echo "Sorry there was a problem adding your book because " . $ex;
-    die();
-}
-$_SESSION['bookId'] = $bookId;
-header("Location: newBook.php");
-die();
+echo ''
 ?>
+<div class="container">
+
+</div>
+</body>
+</html>

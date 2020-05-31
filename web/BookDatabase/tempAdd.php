@@ -3,8 +3,8 @@ include "header.php";
 require "dbConnect.php";
 $db = get_db();
 
-$addAuthor = $_POST['add-author'];
-$addTitle = $_POST['add-title'];
+$addAuthor = strtoupper($_POST['add-author']);
+$addTitle = strtoupper($_POST['add-title']);
 $addLocation = $_POST['add-location'];
 $addGenre = $_POST['add-genre'];
 //echo "Genre - ";

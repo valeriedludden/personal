@@ -10,7 +10,7 @@ echo "<div>";
 
 foreach ($rs as $r) {
     ?>
-    <p>Title: <?= $r['title'] ?>   NAME: <?= $r['name'] ?>  Genre: <?= $r['genre'] ?> Location: <?= $r['location'] ?></p>
+    <p>Title: <?= $r['title'] ?>  * Author: <?= $r['name'] ?>  * Genre: <?= $r['genre'] ?> * Location: <?= $r['location'] ?></p>
     <?php
 }
 ?>

@@ -13,8 +13,8 @@ $db = get_db();
     <div class="test">Hello World</div>
     <div class="addContainer">
         <form method="POST" action="tempAdd.php">
-            <label class="addTitle" for="add-book">Title:</label>
-            <input type="text" id="add-book" name="add-book" placeholder="Book Title"><br/>
+            <label class="addTitle" for="add-title">Title:</label>
+            <input type="text" id="add-title" name="add-title" placeholder="Book Title"><br/>
             <label class="addTitle" for="add-author">Author</label>
             <input type="text" id="add-book" name="add-author" placeholder="Last, First"><br/>
             <label class="addTitle" for="add-genre">Pick a Genre</label>

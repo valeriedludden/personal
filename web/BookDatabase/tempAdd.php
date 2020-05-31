@@ -31,6 +31,7 @@ $statement->execute();
     $authorId = $db->lastInsertId("author_id_seq");
 
 
+
         $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId)");
 
         // Then, bind the values
@@ -38,7 +39,10 @@ $statement->execute();
         $statement->bindValue(':authorId', $authorId);
         $statement->bindValue(':genreId', $addGenre);
         $statement->bindValue(':locationId', $addLocation);
-    $statement->execute();
+        $bookId = $db->lastInsertId("author_id_seq");
+        $_SESSION['bookId'] = $bookId;
+        $statement->execute();
+
 
 }
 catch (Exception $ex)

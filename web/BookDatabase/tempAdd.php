@@ -19,7 +19,7 @@ $statement->bindValue(':addAuthor', $addAuthor);
 $statement->execute();
 
 
-    $authorId = $db->lastInsertId("author_is_seq");
+    $authorId = $db->lastInsertId("author_id_seq");
 
 
         $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(':title', :authorId, :genreId, :locationid)");

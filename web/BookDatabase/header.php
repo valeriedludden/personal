@@ -20,7 +20,7 @@ session_start();
 </div>
 <ul class="nav">
     <li class="nav-item">
-        <?php $library_link = "Library"; ?>
+        <?php $library_link = "Search Library"; ?>
         <a class="nav-link links" href="library.php"><?php echo $library_link ?></a>
     </li>
     <li class="nav-item">
@@ -36,7 +36,7 @@ session_start();
         <a class="nav-link links" href="authorList.php"><?php echo $a_link ?></a>
     </li>
     <li class="nav-item">
-        <?php $b_link = "Books List"; ?>
+        <?php $b_link = "Book List"; ?>
         <a class="nav-link links" href="listBooks.php"><?php echo $b_link ?></a>
     </li>
 

@@ -18,9 +18,17 @@ echo $addTitle;
 echo " Your genre id is ";
 $query2 = "SELECT id, genre FROM genre WHERE genre = '$addGenre'";
 $genId =  $db->query($query2);
-echo $genId["id"];
+if(count($genId > 0)) {
+    foreach ($genId as $g) {
+        echo $g["id"];
+    }
+}
+else{
+    echo " Sorry no GENRE ID ";
+}
 
-//
+
+
 //try
 //{
 //    // Add the Scripture
@@ -36,12 +44,12 @@ echo $genId["id"];
 //    $authorId = $db->lastInsertId("author_id_seq");
 //
 //
-//        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId) WHERE ");
+//        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId) ON genre g WHERE ");
 //
 //        // Then, bind the values
 //        $statement->bindValue(':title', $addTitle);
 //        $statement->bindValue(':authorId', $authorId);
-//        $statement->bindValue(':genreId', $genId);
+////        $statement->bindValue(':genreId', $genId);
 //        $statement->bindValue(':locationId', $addLocation);
 //
 //        $statement->execute();

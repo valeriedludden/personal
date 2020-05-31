@@ -19,8 +19,9 @@ foreach ($rs as $r) {
     <?php
 }}
 else{
-    echo "Sorry your book was not added";
+    echo " ***Sorry your book was not added";
 }
+session_unset();
 ?>
     </body>
     </html>

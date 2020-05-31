@@ -28,6 +28,10 @@ session_start();
         <a class="nav-link links" href="addBook.php"><?php echo $addBook_link ?></a>
     </li>
     <li class="nav-item">
+        <?php $deleteBook_link = "Delete A Book"; ?>
+        <a class="nav-link links" href="deleteBook.php"><?php echo $deleteBook_link ?></a>
+    </li>
+    <li class="nav-item">
         <?php $a_link = "Authors"; ?>
         <a class="nav-link links" href="authorList.php"><?php echo $a_link ?></a>
     </li>
@@ -35,14 +39,6 @@ session_start();
         <?php $b_link = "Books List"; ?>
         <a class="nav-link links" href="listBooks.php"><?php echo $b_link ?></a>
     </li>
-<!--    <li class="nav-item">-->
-<!--        --><?php //$book_link = "Books"; ?>
-<!--        <a class="nav-link links" href="books_page.php">--><?php //echo $book_link ?><!--</a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--        --><?php //$author_link = "Authors"; ?>
-<!--        <a class="nav-link links" href="authors.php">--><?php //echo $author_link ?><!--</a>-->
-<!--    </li>-->
 
 </ul>
 <br>

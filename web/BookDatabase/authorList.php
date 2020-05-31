@@ -15,9 +15,9 @@ echo $stuff;
 
 $st = $db->query('SELECT id, name FROM author');
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
-$lastAuthorId = $db->lastInsertId("author_id_seq");
-echo "The last Author ID is: ";
-echo  $lastAuthorId;
+//$lastAuthorId = $db->lastInsertId("author_id_seq");
+//echo "The last Author ID is: ";
+//echo  $lastAuthorId;
 
 foreach ($rs as $r) {
 

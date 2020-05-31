@@ -40,9 +40,8 @@ $statement->execute();
         $statement->bindValue(':genreId', $addGenre);
         $statement->bindValue(':locationId', $addLocation);
         $bookId = $db->lastInsertId("book_id_seq");
-        $_SESSION['bookId'] = $bookId;
         $statement->execute();
-
+        $_SESSION['bookId'] = $bookId;
 
 }
 catch (Exception $ex)

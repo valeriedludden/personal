@@ -2,7 +2,7 @@
 include "header.php";
 require "dbConnect.php";
 $db = get_db();
-if(isset($_POST['delete-title'])){
+if(!isset($_POST['delete-title'])){
 ?>
 <div class="deleteContainer">
     <div class="manTitle "><h1>Delete a book from the library </h1></div>

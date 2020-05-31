@@ -43,7 +43,7 @@ $statement->execute();
         $statement->execute();
 
     $bookId = $db->lastInsertId("book_id_seq");
-    $statement->execute();
+//    $statement->execute();
 
 
 }

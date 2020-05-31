@@ -2,36 +2,20 @@
 include "header.php";
 require "dbConnect.php";
 $db = get_db();
-
-$addAuthor = $_POST['add-author'];
-$addTitle = $_POST['add-title'];
-$addLocation = $_POST['add-location'];
-$addGenre = $_POST['add-genre'];
-
-$stuff = "Heelo Stuff";
-
-echo "Results";
-echo $stuff;
-
-$st = $db->query('SELECT id, name FROM author');
+$bId = $db->lastInsertId("book_id_seq");
+$st = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE b.id = '$bId' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 
-
+echo "The book you picked is: ";
 foreach ($rs as $r) {
+    ?>
 
-   ?>
-
-    <p>ID: <?=$r['id'] ?> - </p>
-    <p>NAME: <?=$r['name'] ?></p><br>
-    <!--        <h1>Title: --><?//= $row['b.title'] ?><!--</h1><br>-->
-    <!--        <h1>Author: --><?//= $row['a.name'] ?><!--</h1><br>-->
-    <!--        <h1>Location: --><?//= $row['l.location'] ?><!--</h1><br>-->
-    <!--        <h1>Genre: --><?//= $row['g.genre'] ?><!--</h1><br>-->
-    <!--    </div>-->
-    <!--    -->
-    </body>
-    </html>
+    <p>Title: <?= $r['title'] ?> - </p>
+    <p> *Author: <?= $r['name'] ?></p>
+    <p> *Genre: <?= $r['genre'] ?></p><br>
+    <p> *Location: <?= $r['location'] ?></p><br>
     <?php
 }
-//session_unset();
 ?>
+    </body>
+    </html>

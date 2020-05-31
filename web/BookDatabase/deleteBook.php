@@ -19,7 +19,6 @@ if(!isset($_POST['delete-title'])){
 <?php
 }
 $deleteTitle = strtoupper($_POST["delete-title"]);
-echo "The book you want to delete is: " .$deleteTitle . "<br>";
 $statement = $db->query("SELECT b.id, b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE b.title ='$deleteTitle' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
@@ -35,6 +34,11 @@ if (count($results) > 0) {
                 <li class='list-group-item'><?= $row['genre'] ?></li>
             </ul>
         </div>
+        <form method="POST" action="tempDelete.php">
+            <input type="hidden" name="delete-book" value="<?=$row['id']?>">
+            <input type="submit" value="Yes, delete this book">
+        </form>
+
 
         <?php
     }

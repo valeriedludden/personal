@@ -16,6 +16,8 @@ echo $addLocation;
 echo " Title - ";
 echo $addTitle;
 
+$query2 = "SELECT id FROM genre WHERE genre = '$addGenre'";
+$genId =  $db->query($query2);
 
 try
 {
@@ -30,8 +32,7 @@ $statement->execute();
 
 //    $authorId = 150;
     $authorId = $db->lastInsertId("author_id_seq");
-    $query2 = "SELECT id FROM genre g WHERE g.genre = '$addGenre'";
-    $genId =  $db->query($query2);
+
 
         $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId) WHERE ");
 

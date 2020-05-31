@@ -23,7 +23,7 @@ echo "The book you want to delete is: " .$deleteTitle . "<br>";
 $statement = $db->query("SELECT b.id, b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE b.title ='$deleteTitle' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-if (count($results) > 0) {
+if (count($results) > 0 && isset($_POST["delete-title"])) {
     echo "<h1><b>Is the the book you want to delete? </b></h1>";
     foreach ($results as $row) {
         ?>

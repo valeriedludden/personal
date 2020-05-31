@@ -3,21 +3,14 @@ include "header.php";
 require "dbConnect.php";
 $db = get_db();
 
-//$book = strtoupper($_POST["book"]);
-
-
-
 ?>
-<div class="container">
+<div class="manContainer">
     <div class="manTitle "><h1>Add a book to the library </h1></div>
-    <div class="test">Hello World</div>
     <div class="addContainer">
         <form method="POST" action="tempAdd.php">
             <label class="addTitle" for="add-title">Title:</label>
             <input type="text" id="add-title" name="add-title" placeholder="Book Title"><br/>
             <label class="addTitle" for="add-author">Author</label>
-
-
             <input type="text" id="add-book" name="add-author" placeholder="Last, First"><br/>
             <label class="addTitle" for="add-genre">Pick a Genre</label>
 <!--            Comedy <input type="radio" name="add-genre" value=1></br>-->

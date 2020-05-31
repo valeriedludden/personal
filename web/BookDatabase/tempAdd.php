@@ -39,7 +39,7 @@ $statement->execute();
         $statement->bindValue(':authorId', $authorId);
         $statement->bindValue(':genreId', $addGenre);
         $statement->bindValue(':locationId', $addLocation);
-        $bookId = $db->lastInsertId("book_id_seq");
+//        $bookId = $db->lastInsertId("book_id_seq");
         $statement->execute();
 //        $_SESSION['bookId'] = $bookId;
 

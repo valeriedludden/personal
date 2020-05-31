@@ -39,9 +39,12 @@ $statement->execute();
         $statement->bindValue(':authorId', $authorId);
         $statement->bindValue(':genreId', $addGenre);
         $statement->bindValue(':locationId', $addLocation);
-//        $bookId = $db->lastInsertId("book_id_seq");
+
         $statement->execute();
-//        $_SESSION['bookId'] = $bookId;
+
+    $bookId = $db->lastInsertId("book_id_seq");
+    $statement->execute();
+
 
 }
 catch (Exception $ex)
@@ -51,6 +54,7 @@ catch (Exception $ex)
     echo "Sorry there was a problem adding your book because " . $ex;
     die();
 }
+$_SESSION['bookId'] = $bookId;
 header("Location: newBook.php");
 die();
 ?>

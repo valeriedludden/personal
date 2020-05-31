@@ -31,7 +31,7 @@ $statement->execute();
 //    $authorId = $db->lastInsertId("author_id_seq");
 
 
-        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationid)");
+        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId)");
 
         // Then, bind the values
         $statement->bindValue(':title', $addTitle);

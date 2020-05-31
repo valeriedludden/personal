@@ -8,6 +8,7 @@ $st = $db->query("SELECT b.id, b.title, a.name, l.location, g.genre FROM book b,
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 
 if(count($rs) > 0){
+    echo "<h1>The following book has been added:</h1>";
 foreach ($rs as $r) {
     ?>
 

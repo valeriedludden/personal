@@ -3,7 +3,6 @@ include "header.php";
 require "dbConnect.php";
 $db = get_db();
 $deleteBook = $_POST["delete-book"];
-echo "The book you want to delete is: " .$deleteBook . "<br>";
 $statement = $db->query("SELECT b.id, b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE b.id ='$deleteBook' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
@@ -21,7 +20,7 @@ if (count($results) > 0) {
         </div>
 
         <?php
-        echo " has been deleted";
+        echo "<h1> has been deleted</h1>";
     }
     $statement = $db->prepare("DELETE FROM book WHERE id = '$deleteBook'");
     $statement->execute();

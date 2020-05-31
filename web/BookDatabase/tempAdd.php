@@ -16,7 +16,7 @@ echo $addLocation;
 echo " Title - ";
 echo $addTitle;
 echo " Your genre id is ";
-$query2 = "SELECT id FROM genre WHERE genre = '$addGenre'";
+$query2 = "SELECT id FROM genre WHERE genre = 'Puzzles'";
 $genId =  $db->query($query2);
 echo $genId;
 

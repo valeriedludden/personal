@@ -27,10 +27,10 @@ if (count($results) > 0) {
         ?>
         <div class='container'>
             <ul class='list-group list-group-horizontal'>
-                <li class='list-group-item g-one'><?= $row['title'] ?></li>
-                <li class='list-group-item g-two'><?= $row['name'] ?></li>
-                <li class='list-group-item g-three'><?= $row['location'] ?></li>
-                <li class='list-group-item g-three'><?= $row['genre'] ?></li>
+                <li class='list-group-item'><?= $row['title'] ?></li>
+                <li class='list-group-item'><?= $row['name'] ?></li>
+                <li class='list-group-item'><?= $row['location'] ?></li>
+                <li class='list-group-item'><?= $row['genre'] ?></li>
             </ul>
         </div>
 

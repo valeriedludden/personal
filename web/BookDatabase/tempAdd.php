@@ -24,20 +24,21 @@ $query = 'INSERT INTO author(name) VALUES(:addAuthor)';
 $statement = $db->prepare($query);
 $statement->bindValue(':addAuthor', $addAuthor);
 
+
 $statement->execute();
 
 
 //    $authorId = 150;
     $authorId = $db->lastInsertId("author_id_seq");
+    $query2 = "SELECT id FROM genre g WHERE g.genre = '$addGenre'";
+    $genId =  $db->query($query2);
 
-
-
-        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId)");
+        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId) WHERE ");
 
         // Then, bind the values
         $statement->bindValue(':title', $addTitle);
         $statement->bindValue(':authorId', $authorId);
-        $statement->bindValue(':genreId', $addGenre);
+        $statement->bindValue(':genreId', $genId);
         $statement->bindValue(':locationId', $addLocation);
 
         $statement->execute();

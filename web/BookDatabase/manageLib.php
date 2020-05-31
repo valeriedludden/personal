@@ -42,7 +42,7 @@ $db = get_db();
                 <option value="Poems"></option>
                 <option value="Self Improvement"></option>
                 <option value="Animals & Nature"></option>
-            </datalist>
+            </datalist><br>
 
             <label class="addTitle" for="add-location">Pick a Location:</label>
             Den Bookcase Left <input type="radio" name="add-location" value=1></br>

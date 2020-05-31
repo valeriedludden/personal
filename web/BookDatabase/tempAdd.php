@@ -3,10 +3,10 @@ include "header.php";
 require "dbConnect.php";
 $db = get_db();
 
-//$addAuthor = $_POST['add-author'];
-//$addTitle = $_POST['add-title'];
-//$addLocation = $_POST['add-location'];
-//$addGenre = $_POST['add-genre'];
+$addAuthor = $_POST['add-author'];
+$addTitle = $_POST['add-title'];
+$addLocation = $_POST['add-location'];
+$addGenre = $_POST['add-genre'];
 //echo "Genre - ";
 //echo $addGenre;
 //echo " Author - ";

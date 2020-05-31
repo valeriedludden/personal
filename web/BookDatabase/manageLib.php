@@ -36,10 +36,10 @@ $db = get_db();
 <!--            Animals/Nature <input type="radio" name="add-genre" value=14></br>-->
             <input list="add-genre" name="add-genre">
             <datalist id="add-genre">
-                <option value="Fiction">You </option>
-                <option value="2Fiction">You 2</option>
-                <option value="3Fiction">You 3</option>
-                <option value="4Fiction">You 4</option>
+                <option value="Fiction"></option>
+                <option value="2Fiction"></option>
+                <option value="3Fiction"></option>
+                <option value="4Fiction"></option>
 
             </datalist>
 

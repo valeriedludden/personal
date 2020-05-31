@@ -38,7 +38,7 @@ if (count($results) > 0) {
 
         <?php
     }
-    unset($_POST["delete-title"]);
+//    unset($_POST["delete-title"]);
 }
 else {
     echo "I am sorry, there is no book with that title in this library";

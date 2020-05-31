@@ -41,7 +41,7 @@ $statement->execute();
         $statement->bindValue(':locationId', $addLocation);
         $bookId = $db->lastInsertId("book_id_seq");
         $statement->execute();
-        $_SESSION['bookId'] = $bookId;
+//        $_SESSION['bookId'] = $bookId;
 
 }
 catch (Exception $ex)

@@ -30,7 +30,6 @@ if(!isset ($_SESSION["cart_items"])){
                         <h5 class="card-title"><?php echo $item["name"]; ?></h5>
                         <p class="card-text desc"><?php echo $item["description"]; ?></p>
                         <p class="card-text price"> $<?php echo $item["price"]; ?></p>
-<!--                        <button type="submit" name="--><?php //$item["id"]; ?><!--" class="btnAddAction" />Add to Cart </button>-->
                         <button type="submit" name="<?php echo $item["id"];?>" class="btnAddAction" value="<?php echo $item;?>"/>Add to Cart </button>
                     </div>
                 </div>

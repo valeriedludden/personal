@@ -18,55 +18,52 @@ echo $addTitle;
 echo " Your genre id is ";
 $query2 = "SELECT id, genre FROM genre WHERE genre = '$addGenre'";
 $genId =  $db->query($query2);
-if(count($genId > 0)) {
+$gId = 0;
     foreach ($genId as $g) {
-        echo $g["id"];
-    }
-}
-else{
-    echo " Sorry no GENRE ID ";
+        $gId = $g["id"];
 }
 
 
 
-//try
-//{
-//    // Add the Scripture
-//$query = 'INSERT INTO author(name) VALUES(:addAuthor)';
-//$statement = $db->prepare($query);
-//$statement->bindValue(':addAuthor', $addAuthor);
-//
-//
-//$statement->execute();
-//
-//
-////    $authorId = 150;
-//    $authorId = $db->lastInsertId("author_id_seq");
-//
-//
-//        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId) ON genre g WHERE ");
-//
-//        // Then, bind the values
-//        $statement->bindValue(':title', $addTitle);
-//        $statement->bindValue(':authorId', $authorId);
-////        $statement->bindValue(':genreId', $genId);
-//        $statement->bindValue(':locationId', $addLocation);
-//
-//        $statement->execute();
-//
-//    $bookId = $db->lastInsertId("book_id_seq");
-////    $statement->execute();
-//
-//
-//}
-//catch (Exception $ex)
-//{
-//    // Please be aware that you don't want to output the Exception message in
-//    // a production environment
-//    echo "Sorry there was a problem adding your book because " . $ex;
-//    die();
-//}
-//$_SESSION['bookId'] = $bookId;
-//header("Location: newBook.php");
-//die();
-//?>
+
+try
+{
+    // Add the Scripture
+$query = 'INSERT INTO author(name) VALUES(:addAuthor)';
+$statement = $db->prepare($query);
+$statement->bindValue(':addAuthor', $addAuthor);
+
+
+$statement->execute();
+
+
+//    $authorId = 150;
+    $authorId = $db->lastInsertId("author_id_seq");
+
+
+        $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId)");
+
+        // Then, bind the values
+        $statement->bindValue(':title', $addTitle);
+        $statement->bindValue(':authorId', $authorId);
+        $statement->bindValue(':genreId', $gId);
+        $statement->bindValue(':locationId', $addLocation);
+
+        $statement->execute();
+
+    $bookId = $db->lastInsertId("book_id_seq");
+//    $statement->execute();
+
+
+}
+catch (Exception $ex)
+{
+    // Please be aware that you don't want to output the Exception message in
+    // a production environment
+    echo "Sorry there was a problem adding your book because " . $ex;
+    die();
+}
+$_SESSION['bookId'] = $bookId;
+header("Location: newBook.php");
+die();
+?>

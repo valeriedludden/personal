@@ -25,7 +25,7 @@ session_start();
     </li>
     <li class="nav-item">
         <?php $manage_link = "Manage Library"; ?>
-        <a class="nav-link links" href="manageLib.php"><?php echo $manage_link ?></a>
+        <a class="nav-link links" href="addBook.php"><?php echo $manage_link ?></a>
     </li>
     <li class="nav-item">
         <?php $a_link = "Authors"; ?>

@@ -14,8 +14,7 @@ echo "<div>";
 <!--    --><?php
 //}
 //?>
-<h1>Authors with Books in this Library</h1>
-<div class="container">
+<!--<div class="container">-->
     <ul class="list-group">
         <li class="authorList list-group-item title l-one">Title</li>
         <li class="authorList list-group-item title l-two">Author</li>
@@ -36,7 +35,7 @@ echo "<div>";
             <?php
         }
         ?>
-</div>
+<!--</div>-->
 </ul>
 </body>
 </html>

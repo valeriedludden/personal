@@ -3,7 +3,7 @@ include "header.php";
 require "dbConnect.php";
 $db = get_db();
 
-$st = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE b.author = a.id AND b.location = l.id AND b.genre = g.id");
+$st = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE b.author = a.id AND b.location = l.id AND b.genre = g.id ORDER by b.title");
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 echo "<h1>Books in the Library</h1>";
 echo "<div>";

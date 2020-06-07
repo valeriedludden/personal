@@ -14,17 +14,14 @@ a {
 }
 
 .g-one {
-    /*background-color: rosybrown;*/
     width: 40%;
 }
 
 .g-two {
-    /*background-color: wheat;*/
     width: 30%;
 }
 
 .g-three {
-    /*background-color: #a0a98f;*/
     width: 30%;
 }
 
@@ -99,8 +96,6 @@ results-list {
 
 h3 {
     text-align: center;
-    /*width: auto;*/
-    /*margin: auto;*/
 }
 .del-book{
     width: 70%;

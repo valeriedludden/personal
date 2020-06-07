@@ -67,7 +67,6 @@ label {
 .authorList {
     margin-left: 40px;
     padding-left: 60px;
-    color: indigo;
 }
 .resultContainer{
     width: 100%;
@@ -77,4 +76,7 @@ label {
     font-weight: bold;
     text-align: center;
     background-color:rgba(0,0,0,.03);
+}
+button {
+    background-color: mediumpurple;
 }

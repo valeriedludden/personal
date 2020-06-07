@@ -7,7 +7,6 @@ $location = $_POST["location"];
 
 $statement = $db->query("SELECT b.title, a.name, l.location, l.id, g.genre FROM book b, author a, location l, genre g WHERE l.location ='$location' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
-//$locs = ['Den Bookcase Left','Den Bookcase Right', 'Barrister Bookcase West', 'Barrister Bookcase East', 'Guest Bedroom Shelves', 'STE Michelle Shopping Bag'];
 
 echo "<h1>Below is a list of books located in the $location</h1></br>";
 echo "<b><div class='container'>

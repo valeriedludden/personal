@@ -27,6 +27,15 @@ a {
     /*background-color: #a0a98f;*/
     width: 30%;
 }
+.l-one {
+    width: 30%;
+}
+.l-two {
+    width: 26%;
+}
+.l-three {
+    width: 22%;
+}
 
 .container {
     width: 90%;
@@ -64,11 +73,6 @@ label {
     color: rebeccapurple;
 }
 
-/*.authorList {*/
-/*    margin: 40px;*/
-/*    padding: 60px;*/
-/*    width: 70%*/
-/*}*/
 .resultContainer{
     width: 100%;
     margin: 20px 40px 20px 0;

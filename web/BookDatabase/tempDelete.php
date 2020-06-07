@@ -10,22 +10,9 @@ if (count($results) > 0) {
     echo "<h1><b>The book </h1><br>";
     foreach ($results as $row) {
         ?>
-<!--        <div class='container'>-->
-<!--            <div class="del-book"><h3 >-->
-<!--                --><?//= $row['title'] ?><!-- by --><?//= $row['name'] ?>
-<!--            </h3>-->
-<!--                </div>-->
-<!--<!--            <ul class='list-group list-group-horizontal'>-->-->
-<!--<!--                <li class='list-group-item '>-->--><?////= $row['title'] ?><!--<!--</li>-->-->
-<!--<!--                <li class='list-group-item '>-->--><?////= $row['name'] ?><!--<!--</li>-->-->
-<!--<!--                <li class='list-group-item '>-->--><?////= $row['location'] ?><!--<!--</li>-->-->
-<!--<!--                <li class='list-group-item '>-->--><?////= $row['genre'] ?><!--<!--</li>-->-->
-<!--<!--            </ul>-->-->
-<!---->
-<!--        </div>-->
         <div class='container'>
-            <div class="del-book"><h3>  <?= $row['title'] ?></h3></div>
-            <div class="del-book"><h3>  by  <?= $row['name'] ?> </h3></div>
+            <div class="del-book"><h3><?= $row['title'] ?></h3></div>
+            <div class="del-book"><h3> by <?= $row['name'] ?> </h3></div>
 
         </div>
 

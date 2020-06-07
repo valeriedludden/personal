@@ -14,7 +14,7 @@ echo "<div>";
 <!--    --><?php
 //}
 //?>
-<!--<div class="container">-->
+<div class="container1">
     <ul class="list-group list-group-horizontal">
         <li class="authorList list-group-item title l-one">Title</li>
         <li class="authorList list-group-item title l-two">Author</li>
@@ -35,7 +35,7 @@ echo "<div>";
             <?php
         }
         ?>
-<!--</div>-->
+</div>
 </ul>
 </body>
 </html>

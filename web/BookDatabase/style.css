@@ -48,10 +48,6 @@ a {
     margin: auto;
 }
 
-.list-group-item {
-    /*width: 33%;*/
-}
-
 .list-group {
     width: 100%;
     display: flex;

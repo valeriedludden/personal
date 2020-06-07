@@ -10,15 +10,17 @@ $addGenre = $_POST['add-genre'];
 
 $st = $db->query('SELECT id, name FROM author');
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
-echo '<h1>Authors with Books in this Library</h1>
-<ul>';
-foreach ($rs as $r) {
-
-    ?>
-    <li class="authorList list-group-item"><?=$r['name'] ?></li>
-    <?php
-}
 ?>
+<h1>Authors with Books in this Library</h1>
+<ul>
+    <?php
+    foreach ($rs as $r) {
+
+        ?>
+        <li class="authorList list-group-item"><?= $r['name'] ?></li>
+        <?php
+    }
+    ?>
 </ul>
 </body>
 </html>

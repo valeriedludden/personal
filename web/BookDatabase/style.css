@@ -69,6 +69,6 @@ label {
     color: indigo;
 }
 .radioLeft input{
+    display: block;
     text-align: left;
-    display:inline;
 }

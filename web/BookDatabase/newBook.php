@@ -12,14 +12,8 @@ if(count($rs) > 0){
 foreach ($rs as $r) {
     ?>
 
-<!--    <p>Title: --><?//= $r['title'] ?><!-- - </p>-->
-<!--    <p> *Author: --><?//= $r['name'] ?><!--</p>-->
-<!--    <p> *Genre: --><?//= $r['genre'] ?><!--</p>-->
-<!--    <p> *Location: --><?//= $r['location'] ?><!--</p>-->
-
     <div class='container'>
-        <div class="del-book"><h3>Title: <?= $r['title'] ?>  by <?= $r['name'] ?> Genre:  <?= $r['genre'] ?></h3></div>
-
+        <div class="add-book"><h3>Title: <?= $r['title'] ?>,  by  <?= $r['name'] ?>,  Genre:  <?= $r['genre'] ?></h3></div>
     </div>
     <?php
 }}

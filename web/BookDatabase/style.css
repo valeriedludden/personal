@@ -102,7 +102,12 @@ h3 {
     width: auto;
 }
 .del-book{
-    width: 50%;
+    width: 70%;
+    text-align: center;
+    align-content: center;
+}
+add-book{
+    width: 70%;
     text-align: center;
     align-content: center;
 }

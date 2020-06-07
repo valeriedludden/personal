@@ -75,5 +75,5 @@ label {
 .title {
     font-weight: bold;
     text-align: center;
-    background-color:#ffffff03;
+    background-color:rgba(0,0,0,.03);
 }

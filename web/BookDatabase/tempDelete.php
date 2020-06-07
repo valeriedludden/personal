@@ -7,16 +7,20 @@ $statement = $db->query("SELECT b.id, b.title, a.name, l.location, g.genre FROM 
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 if (count($results) > 0) {
-    echo "<h1><b>The book </b></h1>";
+    echo "<h1><b>The book </h1><br>";
     foreach ($results as $row) {
         ?>
         <div class='container'>
-            <ul class='list-group list-group-horizontal'>
-                <li class='list-group-item '><?= $row['title'] ?></li>
-                <li class='list-group-item '><?= $row['name'] ?></li>
-                <li class='list-group-item '><?= $row['location'] ?></li>
-                <li class='list-group-item '><?= $row['genre'] ?></li>
-            </ul>
+            <h1>
+                <?= $row['title'] ?> by <?= $row['name'] ?>
+            </h1>
+<!--            <ul class='list-group list-group-horizontal'>-->
+<!--                <li class='list-group-item '>--><?//= $row['title'] ?><!--</li>-->
+<!--                <li class='list-group-item '>--><?//= $row['name'] ?><!--</li>-->
+<!--                <li class='list-group-item '>--><?//= $row['location'] ?><!--</li>-->
+<!--                <li class='list-group-item '>--><?//= $row['genre'] ?><!--</li>-->
+<!--            </ul>-->
+
         </div>
 
         <?php

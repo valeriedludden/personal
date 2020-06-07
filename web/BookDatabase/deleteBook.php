@@ -27,9 +27,9 @@ if (count($results) > 0) {
     foreach ($results as $row) {
         ?>
         <div class='container'>
-            <div><h3>Title: <?= $row['title'] ?></h3></div>
-            <div><h3>  Author: <?= $row['name'] ?> </h3></div>
-            <div><h3>  Genre: <?= $row['genre'] ?> </h3></div>
+            <div class="del-book"><h3>Title: <?= $row['title'] ?></h3></div>
+            <div class="del-book"><h3>  Author: <?= $row['name'] ?> </h3></div>
+            <div class="del-book"><h3>  Genre: <?= $row['genre'] ?> </h3></div>
         </div>
         <form method="POST" action="tempDelete.php">
             <input type="hidden" name="delete-book" value="<?= $row['id'] ?>">

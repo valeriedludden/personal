@@ -11,9 +11,9 @@ if (count($results) > 0) {
     foreach ($results as $row) {
         ?>
         <div class='container'>
-            <h1>
+            <h3>
                 <?= $row['title'] ?> by <?= $row['name'] ?>
-            </h1>
+            </h3>
 <!--            <ul class='list-group list-group-horizontal'>-->
 <!--                <li class='list-group-item '>--><?//= $row['title'] ?><!--</li>-->
 <!--                <li class='list-group-item '>--><?//= $row['name'] ?><!--</li>-->

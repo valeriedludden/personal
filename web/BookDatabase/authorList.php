@@ -12,7 +12,7 @@ $st = $db->query('SELECT id, name FROM author');
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <h1>Authors with Books in this Library</h1>
-<ul>
+<div class="results-list"><ul>
     <?php
     foreach ($rs as $r) {
 
@@ -21,6 +21,7 @@ $rs = $st->fetchAll(PDO::FETCH_ASSOC);
         <?php
     }
     ?>
+</div>
 </ul>
 </body>
 </html>

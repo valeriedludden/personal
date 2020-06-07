@@ -33,7 +33,7 @@ if (count($results) > 0) {
         </div>
         <form method="POST" action="tempDelete.php">
             <input type="hidden" name="delete-book" value="<?= $row['id'] ?>">
-            <input type="submit" value="Yes, delete this book">
+            <input type="submit" class="sub" value="Yes, delete this book">
         </form>
 <?php
     }

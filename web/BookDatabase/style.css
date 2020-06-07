@@ -78,6 +78,9 @@ label {
     text-align: center;
     background-color:rgba(0,0,0,.03);
 }
-button {
+.sub {
     background-color: mediumpurple;
+}
+results-list{
+width: 70%;
 }

@@ -16,7 +16,7 @@ $db = get_db();
             <form method="POST" action="books_page.php">
                 <label for="book">Search by Book:</label>
                 <input type="text" id="book" name="book" placeholder="Book Title"><br/>
-                <input type="submit" value="Search for Book"> <br/>
+                <input type="submit" class="sub" value="Search for Book"> <br/>
             </form>
         </div>
     </div>
@@ -28,7 +28,7 @@ $db = get_db();
             <form method="POST" action="authors.php">
                 <label for="book">Search by Author:</label>
                 <input type="text" id="author" name="author" placeholder="Last, First"><br/>
-                <input type="submit" value="Search Author"> <br/>
+                <input type="submit" class="sub" value="Search Author"> <br/>
             </form>
         </div>
     </div>
@@ -49,7 +49,7 @@ $db = get_db();
                         <option value="Guest Bedroom"></option>
                         <option value="STE Michelle Shopping Bag"></option>
                     </datalist><br>
-                <input type="submit" value="Search by Location"> <br/>
+                <input type="submit" class="sub" value="Search by Location"> <br/>
                 </div>
             </form>
         </div>
@@ -77,7 +77,7 @@ $db = get_db();
                     <option value="Self Improvement"></option>
                     <option value="Animals & Nature"></option>
                 </datalist><br>
-                <input type="submit" value="Search by Genre"> <br/>
+                <input type="submit" class="sub" value="Search by Genre"> <br/>
             </form>
         </div>
     </div>

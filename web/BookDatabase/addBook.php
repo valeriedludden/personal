@@ -39,7 +39,7 @@ $db = get_db();
             Guest Bedroom Shelves<input type="radio" name="add-location" value=5></br>
             STE Michelle Shopping Bag<input type="radio" name="add-location" value=6></br>
 
-            <input type="submit" value="Add Book"> <br/>
+            <input type="submit" class="sub" value="Add Book"> <br/>
         </form>
     </div>
 </div>

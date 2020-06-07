@@ -15,7 +15,7 @@ echo "Genre 1". $genre;
 //    $gId = $g["id"];
 //    echo "Genre 3". $gId;
 //}
-$statement = $db->query("SELECT b.title, a.name, l.location, g.genre FROM book b, author a, location l, genre g WHERE g.genre ='$genre' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
+$statement = $db->query("SELECT b.title, a.name, l.location, g.genre, g.id FROM book b, author a, location l, genre g WHERE g.genre ='$genre' AND b.author = a.id AND b.location = l.id AND b.genre = g.id");
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 echo "<h1>Below is a list of books in the " .  $results['genre']." genre</h1></br>";

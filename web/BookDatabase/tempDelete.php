@@ -10,19 +10,17 @@ if (count($results) > 0) {
     echo "<h1><b>The book </h1><br>";
     foreach ($results as $row) {
         ?>
-        <div class='container'>
-            <div class="del-book"><h3><?= $row['title'] ?> by <?= $row['name'] ?> </h3></div>
 
-        </div>
+        <h3><?= $row['title'] ?></h3><br>
+        <h3>by <?= $row['name'] ?> </h3>
+
 
         <?php
         echo "<h1> has been deleted</h1>";
     }
     $statement = $db->prepare("DELETE FROM book WHERE id = '$deleteBook'");
     $statement->execute();
-}
-
-else {
+} else {
     echo "I am sorry, there is no book with that title in this library";
 }
 

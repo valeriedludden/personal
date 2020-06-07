@@ -107,9 +107,7 @@ h3 {
     text-align: center;
     align-content: center;
 }
-add-book{
-    width: 70%;
-    text-align: center;
+.btncenter{
     align-content: center;
     margin: auto;
 }

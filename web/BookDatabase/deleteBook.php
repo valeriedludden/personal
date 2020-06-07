@@ -26,14 +26,14 @@ if (count($results) > 0) {
     echo "<h1><b>Is the the book you want to delete? </b></h1>";
     foreach ($results as $row) {
         ?>
-        <div class='container'>
-            <div class="del-book"><h3>Title: <?= $row['title'] ?></h3></div>
-            <div class="del-book"><h3>  Author: <?= $row['name'] ?> </h3></div>
-            <div class="del-book"><h3>  Genre: <?= $row['genre'] ?> </h3></div>
-        </div>
+
+          <h3>Title: <?= $row['title'] ?></h3><br>
+           <h3>  Author: <?= $row['name'] ?> </h3><br>
+           <h3>  Genre: <?= $row['genre'] ?> </h3><br>
+
         <form method="POST" action="tempDelete.php">
             <input type="hidden" name="delete-book" value="<?= $row['id'] ?>">
-            <input type="submit" class="sub" value="Yes, delete this book">
+            <input type="submit" class="sub btncenter" value="Yes, delete this book">
         </form>
 <?php
     }

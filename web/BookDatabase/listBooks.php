@@ -15,7 +15,7 @@ echo "<div>";
 //}
 //?>
 <!--<div class="container">-->
-    <ul class="list-group">
+    <ul class="list-group list-group-horizontal">
         <li class="authorList list-group-item title l-one">Title</li>
         <li class="authorList list-group-item title l-two">Author</li>
         <li class="authorList list-group-item title l-three">Genre</li>
@@ -26,7 +26,7 @@ echo "<div>";
         foreach ($rs as $r) {
 
             ?>
-    <ul class="list-group">
+    <ul class="list-group list-group-horizontal">
             <li class="authorList list-group-item"><?= $r['title'] ?></li>
             <li class="authorList list-group-item"><?= $r['name'] ?></li>
             <li class="authorList list-group-item"><?= $r['genre'] ?></li>

@@ -13,7 +13,7 @@ $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <h1>Authors with Books in this Library</h1>
 <div class="container">
-    <ul class="list-group list-group-horizontal">
+    <ul class="list-group">
     <?php
     foreach ($rs as $r) {
 

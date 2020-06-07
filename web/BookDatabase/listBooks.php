@@ -8,18 +8,18 @@ $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 echo "<h1>Books in the Library</h1>";
 echo "<div>";
 
-foreach ($rs as $r) {
-    ?>
-    <p>Title: <?= $r['title'] ?>  * Author: <?= $r['name'] ?>  * Genre: <?= $r['genre'] ?> * Location: <?= $r['location'] ?></p>
-    <?php
-}
-?>
+//foreach ($rs as $r) {
+//    ?>
+<!--    <p>Title: --><?//= $r['title'] ?><!--  * Author: --><?//= $r['name'] ?><!--  * Genre: --><?//= $r['genre'] ?><!-- * Location: --><?//= $r['location'] ?><!--</p>-->
+<!--    --><?php
+//}
+//?>
 <h1>Authors with Books in this Library</h1>
 <div class="container">
-    <ul class="list-group list-group-horizontal">
+    <ul class="list-group">
         <li class="authorList list-group-item title l-one">Title</li>
         <li class="authorList list-group-item title l-two">Author</li>
-        <li class="authorList list-group-item title l-three">Genre></li>
+        <li class="authorList list-group-item title l-three">Genre</li>
         <li class="authorList list-group-item title l-three">Location</li>
     </ul>
 
@@ -27,7 +27,7 @@ foreach ($rs as $r) {
         foreach ($rs as $r) {
 
             ?>
-    <ul class="list-group list-group-horizontal">
+    <ul class="list-group">
             <li class="authorList list-group-item"><?= $r['title'] ?></li>
             <li class="authorList list-group-item"><?= $r['name'] ?></li>
             <li class="authorList list-group-item"><?= $r['genre'] ?></li>

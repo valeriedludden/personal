@@ -69,6 +69,7 @@ $db = get_db();
                     <option value="Travel"></option>
                     <option value="Art"></option>
                     <option value="Children Books"></option>
+                    <option value="Cooking"></option>
                     <option value="Health"></option>
                     <option value="History"></option>
                     <option value="Puzzles"></option>
@@ -81,6 +82,4 @@ $db = get_db();
             </form>
         </div>
     </div>
-
-
 </div>

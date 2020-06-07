@@ -14,7 +14,9 @@ foreach ($rs as $r) {
 
 <!--    <div class='container'>-->
 <!--        <div class="add-book">-->
-            <h3>Title: <?= $r['title'] ?>,  by  <?= $r['name'] ?>,  Genre:  <?= $r['genre'] ?></h3>
+            <h3>Title: <?= $r['title'] ?>,</h3><br>
+             <h3>by  <?= $r['name'] ?>, </h3><br>
+    <h3>Genre:  <?= $r['genre'] ?></h3>
 <!--        </div>-->
 <!--    </div>-->
     <?php

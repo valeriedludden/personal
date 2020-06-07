@@ -1,5 +1,6 @@
 .nav {
-    background-color: #93e1d8;
+    /*background-color: #92475a;*/
+    background-color: #721c24;
     font-size: large;
 }
 
@@ -14,17 +15,17 @@ a {
 }
 
 .g-one {
-    background-color: ;
+    background-color: rosybrown;
     width: 40%;
 }
 
 .g-two {
-    background-color: lightskyblue;
+    background-color: wheat;
     width: 30%;
 }
 
 .g-three {
-    background-color: #f5c6cb;
+    background-color: #6cbfcc;
     width: 30%;
 }
 

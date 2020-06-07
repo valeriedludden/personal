@@ -27,10 +27,10 @@ echo "<div>";
 
             ?>
     <ul class="list-group list-group-horizontal">
-            <li class="authorList list-group-item"><?= $r['title'] ?></li>
-            <li class="authorList list-group-item"><?= $r['name'] ?></li>
-            <li class="authorList list-group-item"><?= $r['genre'] ?></li>
-            <li class="authorList list-group-item"><?= $r['location'] ?></li>
+            <li class="authorList list-group-item l-one"><?= $r['title'] ?></li>
+            <li class="authorList list-group-item l-two"><?= $r['name'] ?></li>
+            <li class="authorList list-group-item l-three"><?= $r['genre'] ?></li>
+            <li class="authorList list-group-item l-three"><?= $r['location'] ?></li>
     </ul>
             <?php
         }

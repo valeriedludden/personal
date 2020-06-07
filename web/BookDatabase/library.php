@@ -40,12 +40,21 @@ $db = get_db();
         <div class="card-body">
             <form method="POST" action="location.php">
                 <div class="radioLeft">
-                Den Bookcase Left <input type="radio" name="location" value=1></br>
-                Den Bookcase Right<input type="radio" name="location" value=2></br>
-                Barrister Bookcase West<input type="radio" name="location" value=3></br>
-                Barrister Bookcase East<input type="radio" name="location" value=4></br>
-                Guest Bedroom Shelves<input type="radio" name="location" value=5></br>
-                STE Michelle Shopping Bag<input type="radio" name="location" value=6></br>
+<!--                Den Bookcase Left <input type="radio" name="location" value=1></br>-->
+<!--                Den Bookcase Right<input type="radio" name="location" value=2></br>-->
+<!--                Barrister Bookcase West<input type="radio" name="location" value=3></br>-->
+<!--                Barrister Bookcase East<input type="radio" name="location" value=4></br>-->
+<!--                Guest Bedroom Shelves<input type="radio" name="location" value=5></br>-->
+<!--                STE Michelle Shopping Bag<input type="radio" name="location" value=6></br>-->
+
+                    <input list="location" name="location">
+                    <datalist id="location">
+                        <option value="Bookcase in Den Right"></option>
+                        <option value="Barrister Bookcase West"></option>
+                        <option value="Barrister Bookcase"></option>
+                        <option value="Guest Bedroom"></option>
+                        <option value="STE Michelle Shopping Bag"></option>
+                    </datalist><br>
                 <input type="submit" value="Search by Location"> <br/>
                 </div>
             </form>

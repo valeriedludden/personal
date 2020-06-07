@@ -40,7 +40,7 @@ a {
 }
 
 .list-group-item {
-    width: auto;
+    width: 33%;
 }
 
 .list-group {
@@ -68,7 +68,7 @@ label {
     padding-left: 60px;
     color: indigo;
 }
-.radioLeft input{
-    display: block;
-    text-align: left;
+.resultContainer{
+    width: 100%;
+    margin: 20px 40px 20px 0;
 }

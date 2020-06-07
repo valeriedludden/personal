@@ -8,7 +8,7 @@ $statement = $db->query("SELECT b.title, a.name, l.location, g.genre, g.id FROM 
 $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 echo "<h1>Below is a list of books in the " .  $results['genre']." genre</h1></br>";
-echo "<b><div class='container'>
+echo "<b><div class='resultContainer'>
 <ul class='list-group list-group-horizontal'>
         <li class='list-group-item g-one'>Title</li>
         <li class='list-group-item g-two'>Author</li>
@@ -18,11 +18,11 @@ echo "<b><div class='container'>
 
 
 foreach ($results as $row) {
-    echo "<div class='container'>
+    echo "<div class='resultContainer'>
     <ul class='list-group list-group-horizontal'>
-        <li class='list-group-item g-one''>" . $row['title'] . "</li>
-        <li class='list-group-item g-two''>" . $row['name'] . "</li>
-        <li class='list-group-item g-three''>" . $row['location'] . "</li>
+        <li class='list-group-item g-one'>" . $row['title'] . "</li>
+        <li class='list-group-item g-two'>" . $row['name'] . "</li>
+        <li class='list-group-item g-three'>" . $row['location'] . "</li>
     </ul>
 </div>";
 

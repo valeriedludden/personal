@@ -43,9 +43,10 @@ $db = get_db();
                     <label for="book">Search by Location:</label>
                     <input list="location" name="location">
                     <datalist id="location">
+                        <option value="Bookcase in Den Left"></option>
                         <option value="Bookcase in Den Right"></option>
                         <option value="Barrister Bookcase West"></option>
-                        <option value="Barrister Bookcase"></option>
+                        <option value="Barrister Bookcase East"></option>
                         <option value="Guest Bedroom"></option>
                         <option value="STE Michelle Shopping Bag"></option>
                     </datalist><br>

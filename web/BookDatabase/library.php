@@ -57,20 +57,37 @@ $db = get_db();
         </div>
         <div class="card-body radioLeft">
             <form method="POST" action="genre.php">
-                Comedy <input type="radio" name="genre" value=1></br>
-                Biography <input type="radio" name="genre" value=2></br>
-                Fiction <input type="radio" name="genre" value=3></br>
-                Travel <input type="radio" name="genre" value=4></br>
-                Art <input type="radio" name="genre" value=5></br>
-                Childrens <input type="radio" name="genre" value=6></br>
-                Cooking <input type="radio" name="genre" value=7></br>
-                Health <input type="radio" name="genre" value=8></br>
-                History <input type="radio" name="genre" value=9></br>
-                Puzzles <input type="radio" name="genre" value=10></br>
-                Home & Garden <input type="radio" name="genre" value=11></br>
-                Poems <input type="radio" name="genre" value=12></br>
-                Self Improvement <input type="radio" name="genre" value=13></br>
-                Animals/Nature <input type="radio" name="genre" value=14></br>
+<!--                Comedy <input type="radio" name="genre" value=1></br>-->
+<!--                Biography <input type="radio" name="genre" value=2></br>-->
+<!--                Fiction <input type="radio" name="genre" value=3></br>-->
+<!--                Travel <input type="radio" name="genre" value=4></br>-->
+<!--                Art <input type="radio" name="genre" value=5></br>-->
+<!--                Childrens <input type="radio" name="genre" value=6></br>-->
+<!--                Cooking <input type="radio" name="genre" value=7></br>-->
+<!--                Health <input type="radio" name="genre" value=8></br>-->
+<!--                History <input type="radio" name="genre" value=9></br>-->
+<!--                Puzzles <input type="radio" name="genre" value=10></br>-->
+<!--                Home & Garden <input type="radio" name="genre" value=11></br>-->
+<!--                Poems <input type="radio" name="genre" value=12></br>-->
+<!--                Self Improvement <input type="radio" name="genre" value=13></br>-->
+<!--                Animals/Nature <input type="radio" name="genre" value=14></br>-->
+
+                <input list="add-genre" name="add-genre">
+                <datalist id="add-genre">
+                    <option value="Comedy"></option>
+                    <option value="Biography"></option>
+                    <option value="Fiction"></option>
+                    <option value="Travel"></option>
+                    <option value="Art"></option>
+                    <option value="Children Books"></option>
+                    <option value="Health"></option>
+                    <option value="History"></option>
+                    <option value="Puzzles"></option>
+                    <option value="Home & Garden"></option>
+                    <option value="Poems"></option>
+                    <option value="Self Improvement"></option>
+                    <option value="Animals & Nature"></option>
+                </datalist><br>
                 <input type="submit" value="Search by Genre"> <br/>
             </form>
         </div>

@@ -7,15 +7,6 @@ $addAuthor = strtoupper($_POST['add-author']);
 $addTitle = strtoupper($_POST['add-title']);
 $addLocation = $_POST['add-location'];
 $addGenre = $_POST['add-genre'];
-//echo "Genre - ";
-//echo $addGenre;
-//echo " Author - ";
-//echo $addAuthor;
-//echo " Location - ";
-//echo $addLocation;
-//echo " Title - ";
-//echo $addTitle;
-//echo " Your genre id is ";
 $query2 = "SELECT id, genre FROM genre WHERE genre = '$addGenre'";
 $genId = $db->query($query2);
 $gId = 0;
@@ -33,7 +24,6 @@ try {
 
     $statement = $db->prepare("INSERT INTO book(title, author, genre, location) VALUES(:title, :authorId, :genreId, :locationId)");
 
-    // Bind the values
     $statement->bindValue(':title', $addTitle);
     $statement->bindValue(':authorId', $authorId);
     $statement->bindValue(':genreId', $gId);

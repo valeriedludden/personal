@@ -68,3 +68,7 @@ label {
     padding-left: 60px;
     color: indigo;
 }
+.radioLeft input{
+    text-align: left;
+    display:inline;
+}

@@ -37,7 +37,7 @@ $db = get_db();
         <div class="card-header">
             Location
         </div>
-        <div class="card-body">
+        <div class="card-body radioLeft">
             <form method="POST" action="location.php">
                 Den Bookcase Left <input type="radio" name="location" value=1></br>
                 Den Bookcase Right<input type="radio" name="location" value=2></br>
@@ -53,7 +53,7 @@ $db = get_db();
         <div class="card-header">
             Genre
         </div>
-        <div class="card-body">
+        <div class="card-body radioLeft">
             <form method="POST" action="genre.php">
                 Comedy <input type="radio" name="genre" value=1></br>
                 Biography <input type="radio" name="genre" value=2></br>

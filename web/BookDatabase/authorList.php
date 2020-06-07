@@ -8,7 +8,7 @@ $addTitle = $_POST['add-title'];
 $addLocation = $_POST['add-location'];
 $addGenre = $_POST['add-genre'];
 
-$st = $db->query('SELECT id, name FROM author');
+$st = $db->query('SELECT id, name FROM author ORDER by name');
 $rs = $st->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <h1>Authors with Books in this Library</h1>

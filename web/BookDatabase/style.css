@@ -1,6 +1,5 @@
 .nav {
-    /*background-color: #92475a;*/
-    background-color: #721c24;
+    background-color: cadetblue;
     font-size: large;
 }
 
@@ -15,17 +14,17 @@ a {
 }
 
 .g-one {
-    background-color: rosybrown;
+    /*background-color: rosybrown;*/
     width: 40%;
 }
 
 .g-two {
-    background-color: wheat;
+    /*background-color: wheat;*/
     width: 30%;
 }
 
 .g-three {
-    background-color: #a0a98f;
+    /*background-color: #a0a98f;*/
     width: 30%;
 }
 
@@ -75,4 +74,5 @@ label {
 }
 .title {
     font-weight: bold;
+    text-align: center;
 }

@@ -4,6 +4,7 @@ require "dbConnect.php";
 $db = get_db();
 
 $genre = $_POST["genre"];
+echo $genre;
 echo "Genre 1". $genre;
 $query2 = "SELECT id, genre FROM genre WHERE genre = '$genre'";
 

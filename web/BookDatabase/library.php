@@ -72,7 +72,7 @@ $db = get_db();
 <!--                Self Improvement <input type="radio" name="genre" value=13></br>-->
 <!--                Animals/Nature <input type="radio" name="genre" value=14></br>-->
 
-                <input list="genre" name="add-genre">
+                <input list="genre" name="genre">
                 <datalist id="genre">
                     <option value="Comedy"></option>
                     <option value="Biography"></option>

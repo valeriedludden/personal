@@ -12,7 +12,7 @@ $db = get_db();
             <input type="text" id="add-title" name="add-title" placeholder="Book Title"><br/>
             <label class="addTitle" for="add-author">Author</label>
             <input type="text" id="add-book" name="add-author" placeholder="Last, First"><br/>
-            <label class="addTitle" for="add-genre">Pick a Genre</label><br>
+            <label class="addTitle" for="add-genre">Pick a Genre</label>
 
             <input list="add-genre" name="add-genre">
             <datalist id="add-genre">
@@ -31,7 +31,7 @@ $db = get_db();
                 <option value="Animals & Nature"></option>
             </datalist><br>
 
-            <label class="addTitle" for="add-location">Pick a Location:</label>
+            <label class="addTitle" for="add-location">Pick a Location:</label><br>
             Den Bookcase Left <input type="radio" name="add-location" value=1></br>
             Den Bookcase Right<input type="radio" name="add-location" value=2></br>
             Barrister Bookcase West<input type="radio" name="add-location" value=3></br>

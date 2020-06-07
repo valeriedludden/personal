@@ -99,8 +99,8 @@ results-list {
 
 h3 {
     text-align: center;
-    width: auto;
-    margin: auto;
+    /*width: auto;*/
+    /*margin: auto;*/
 }
 .del-book{
     width: 70%;

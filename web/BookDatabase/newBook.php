@@ -12,9 +12,11 @@ if(count($rs) > 0){
 foreach ($rs as $r) {
     ?>
 
-    <div class='container'>
-        <div class="add-book"><h3>Title: <?= $r['title'] ?>,  by  <?= $r['name'] ?>,  Genre:  <?= $r['genre'] ?></h3></div>
-    </div>
+<!--    <div class='container'>-->
+<!--        <div class="add-book">-->
+            <h3>Title: <?= $r['title'] ?>,  by  <?= $r['name'] ?>,  Genre:  <?= $r['genre'] ?></h3>
+<!--        </div>-->
+<!--    </div>-->
     <?php
 }}
 else{

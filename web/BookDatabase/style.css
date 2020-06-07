@@ -41,6 +41,10 @@ a {
     width: 90%;
     display: flex;
 }
+.container1 {
+    width: 95%;
+    display: flex;
+}
 
 .libraryContainer {
     width: 90%;

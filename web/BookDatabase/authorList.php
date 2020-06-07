@@ -15,7 +15,7 @@ echo '<h1>Authors with Books in this Library</h1>
 foreach ($rs as $r) {
 
     ?>
-    <li class="authorList"><?=$r['name'] ?></li><br>
+    <li class="authorList list-group-item"><?=$r['name'] ?></li>
     <?php
 }
 ?>

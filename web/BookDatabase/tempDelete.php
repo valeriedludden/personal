@@ -11,8 +11,7 @@ if (count($results) > 0) {
     foreach ($results as $row) {
         ?>
         <div class='container'>
-            <div class="del-book"><h3><?= $row['title'] ?></h3></div>
-            <div class="del-book"><h3> by <?= $row['name'] ?> </h3></div>
+            <div class="del-book"><h3><?= $row['title'] ?> by <?= $row['name'] ?> </h3></div>
 
         </div>
 

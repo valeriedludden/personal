@@ -43,6 +43,7 @@ a {
 }
 .container1 {
     width: 95%;
+    margin-left: 20px;
 }
 
 .libraryContainer {
@@ -82,7 +83,7 @@ label {
     background-color:rgba(0,0,0,.03);
 }
 .sub {
-    background-color: mediumpurple;
+    background-color: #BDAEC6;
 }
 results-list{
 width: 70%;

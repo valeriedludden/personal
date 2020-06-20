@@ -23,6 +23,10 @@
             <a class="nav-link links" href="../BookDatabase/library.php"><?php echo $db_link ?></a>
         </li>
         <li class="nav-item">
+            <?php $node_link = "Week 09"; ?>
+            <a class="nav-link links" href="../myapp/app.js"><?php echo $db_link ?></a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Other Stuff</a>
         </li>
     </ul>
